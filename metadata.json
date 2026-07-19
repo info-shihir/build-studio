@@ -1,0 +1,6 @@
+{
+  "name": "Built Studio",
+  "description": "A premium, fully responsive, and SEO-optimized architectural & interior design portfolio for Built Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

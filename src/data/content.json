@@ -1,0 +1,281 @@
+{
+  "company": {
+    "name": "Build Studio",
+    "shortName": "Build Studio",
+    "tagline": "Innovative Exterior & Interior Design",
+    "description": "Build Studio is involved in the design and construction of innovative Interior & Exterior solutions, creating premium, modern spaces that blend contemporary aesthetics with outstanding functionality.",
+    "foundedYear": "2020",
+    "stats": [
+      { "id": "stat-1", "value": "150+", "label": "Projects Completed", "sub": "Residential, commercial & public spaces" },
+      { "id": "stat-2", "value": "6+", "label": "Years Experience", "sub": "Delivering excellence since 2020" },
+      { "id": "stat-3", "value": "12+", "label": "Design Awards", "sub": "Recognized for spatial innovation" },
+      { "id": "stat-4", "value": "25+", "label": "Expert Team", "sub": "Creative minds & technical hands" }
+    ],
+    "contact": {
+      "address": "Road 17, Rupsa tower, Banani, Dhaka, Bangladesh, 1212",
+      "email": "studiobuiltin@gmail.com",
+      "phone": "+880 1829-601426",
+      "hours": "Saturday - Thursday: 9:00 AM - 6:00 PM",
+      "socials": {
+        "facebook": "https://www.facebook.com/share/1DE82yDv87/",
+        "instagram": "https://instagram.com/built_studio",
+        "linkedin": "https://linkedin.com/company/builtstudio",
+        "pinterest": "https://pinterest.com/builtstudio"
+      }
+    }
+  },
+  "hero": {
+    "slides": [
+      {
+        "id": "slide-1",
+        "title": "Sculpting Spaces with Light and Frame",
+        "subtitle": "Discover our signature residential architecture that seamlessly blends contemporary aesthetics with tropical responsive design.",
+        "image": "/images/hero_residential_villa_1784442322493.jpg",
+        "cta": "Explore Portfolio",
+        "link": "#projects"
+      },
+      {
+        "id": "slide-2",
+        "title": "Human-Centric Workspace Interiors",
+        "subtitle": "Crafting premium corporate offices that foster collaboration, enhance employee well-being, and express brand identity.",
+        "image": "/images/hero_biophilic_office_1784442437556.jpg",
+        "cta": "View Services",
+        "link": "#services"
+      },
+      {
+        "id": "slide-3",
+        "title": "Timeless Brutalist & Concrete Forms",
+        "subtitle": "Harnessing the raw, honest texture of exposed concrete to forge structures that stand as sculptural land markers.",
+        "image": "/images/hero_brutalist_facade_1784442452943.jpg",
+        "cta": "Get in Touch",
+        "link": "#contact"
+      }
+    ]
+  },
+  "about": {
+    "title": "Our Philosophy",
+    "subtitle": "At Build Studio, innovative design meets precise construction.",
+    "paragraphs": [
+      "At Build Studio, we see design and construction as a unified medium through which interior and exterior environments are structured and human activities are enriched. We coordinate views of nature, pathways of natural light, and fluid layouts so spaces can breathe. Our design language is rooted in modern clarity, sustainable material integrity, and contextual responsiveness.",
+      "Founded on a commitment to outstanding craftsmanship, our practice spans diverse scales—from luxury residential apartments and bespoke corporate office interiors to striking building exteriors and landscape projects. By integrating active construction-site supervision with pure design vision, we ensure each project we design is built with absolute precision."
+    ],
+    "pillars": [
+      {
+        "title": "Contextual Architecture",
+        "desc": "Every design starts with deep site analysis, embracing local climate, topography, culture, and community context."
+      },
+      {
+        "title": "Tropical Responsive Design",
+        "desc": "Specializing in microclimate management through cross-ventilation, double-height voids, and green buffer courts."
+      },
+      {
+        "title": "Honest Materiality",
+        "desc": "Belief in the beauty of raw textures—exposed concrete, native timber, natural stones, and handcrafted brickwork."
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "serv-1",
+      "title": "Architectural Design",
+      "icon": "Compass",
+      "shortDesc": "Creating bespoke buildings, duplexes, and multi-family residences.",
+      "longDesc": "Our architectural design service encompasses comprehensive space planning, structural coordination, and detailed spatial drafting. We create iconic residential duplexes, vacation retreats, and high-density apartments that focus on natural light, double-height spaces, and seamless transition between indoor and outdoor landscapes.",
+      "features": ["3D Visualizations & Rendering", "Bespoke Residence Planning", "Sustainable Material Strategy", "Structural & MEP Integration"]
+    },
+    {
+      "id": "serv-2",
+      "title": "Interior Design",
+      "icon": "Layout",
+      "shortDesc": "Designing high-end residential and functional commercial spaces.",
+      "longDesc": "We redefine interior volumes with custom millwork, curated furniture pieces, and highly tailored lighting designs. From luxury duplex living rooms to modern corporate open-plan offices, we treat interior design as an extension of the architectural shell, ensuring a unified visual flow and superb acoustic, thermal, and spatial comfort.",
+      "features": ["Corporate Workspace Styling", "Luxury Residential Interiors", "Custom Furniture & Joinery", "Lighting & Acoustic Design"]
+    },
+    {
+      "id": "serv-3",
+      "title": "Landscape & Urban Planning",
+      "icon": "Trees",
+      "shortDesc": "Integrating nature back into architecture through custom landscape solutions.",
+      "longDesc": "We design lush courtyard gardens, rooftop terraces, water bodies, and outdoor pavilions that respond to local flora and climate. Our landscape designs focus on rainwater harvesting, natural shade cooling, and visual transitions, making green spaces an integral part of daily life rather than a mere decorative edge.",
+      "features": ["Courtyard & Roof Garden Design", "Water Features & Swimming Pools", "Hardscape & Paving Details", "Native Flora Selection"]
+    },
+    {
+      "id": "serv-4",
+      "title": "Consultancy & Supervision",
+      "icon": "Eye",
+      "shortDesc": "Ensuring design fidelity from paper blueprints to real concrete columns.",
+      "longDesc": "An exceptional design is only as good as its execution. We offer rigorous site supervision, quality audits, material sourcing consultancy, and local regulatory approval facilitation (RAJUK, CDA). Our project architects closely collaborate with contractors and structural engineers to guarantee zero design compromises.",
+      "features": ["Regulatory Approval Coordination", "Rigorous Weekly Site Audits", "Bill of Quantities (BOQ) Auditing", "Vendor & Material Sourcing"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "The Concrete Frame House",
+      "category": "Residential",
+      "client": "Mr. & Mrs. Chowdhury",
+      "location": "Gulshan, Dhaka",
+      "year": "2023",
+      "area": "7,500 sq.ft.",
+      "image": "/images/project_brutalist_concrete_1784442339294.jpg",
+      "description": "A striking brutalist-inspired residential masterpiece featuring raw off-form exposed concrete, massive double-height glass panels, and an internal courtyard. Designed to optimize natural south wind and shade from intense tropical heat.",
+      "features": ["Internal Courtyard with Water Body", "Double-Height Lounge", "Exposed Cast-in-Situ Concrete Walls", "Automated Smart Ventilation Controls"]
+    },
+    {
+      "id": "proj-2",
+      "title": "Aura HQ & Workspace",
+      "category": "Commercial",
+      "client": "Aura Group Ltd.",
+      "location": "Banani, Dhaka",
+      "year": "2024",
+      "area": "12,000 sq.ft.",
+      "image": "/images/project_biophilic_office_1784442356790.jpg",
+      "description": "A high-performance modern corporate headquarters centered on employee well-being. Built around a massive green biophilic atrium, featuring modular desks, flexible acoustic meeting pods, and warm lighting grids.",
+      "features": ["Biophilic Atrium", "Acoustically Treated Conference Pods", "Ergonomic Custom workstations", "Zero-Waste Cafeteria Space"]
+    },
+    {
+      "id": "proj-3",
+      "title": "The Glass Pavilion",
+      "category": "Interior",
+      "client": "Private Client",
+      "location": "Uttara, Dhaka",
+      "year": "2022",
+      "area": "4,200 sq.ft.",
+      "image": "/images/project_sunset_penthouse_1784442374506.jpg",
+      "description": "A premium penthouse interior design combining sleek brass fittings, Italian marble, and frameless slide-fold glass doors. Designed to frame panoramic sunset views of the Uttara lake.",
+      "features": ["Lake-facing Floating Balcony", "Italian Statuario Marble Flooring", "Bespoke Walnut Wardrobes", "Concealed Warm-dim Ambient Lighting"]
+    },
+    {
+      "id": "proj-4",
+      "title": "Verdant Courtyard Retreat",
+      "category": "Landscape",
+      "client": "Rahman Estates",
+      "location": "Sreemangal, Sylhet",
+      "year": "2023",
+      "area": "1.5 Acres",
+      "image": "/images/project_tea_retreat_1784442388855.jpg",
+      "description": "An expansive weekend retreat landscaping project featuring a natural brick-paved walking track, a tranquil koi pond, native bamboo groves, and a minimalist timber deck for morning yoga and tea.",
+      "features": ["Natural Wetland Preservation", "Handcrafted Terracotta Paving", "Reclaimed Timber Yoga Platform", "Zero-Chemical Bio-Filter Koi Pond"]
+    },
+    {
+      "id": "proj-5",
+      "title": "Nirvana Duplex",
+      "category": "Residential",
+      "client": "Engr. Zubayer",
+      "location": "Bashundhara R/A, Dhaka",
+      "year": "2021",
+      "area": "5,800 sq.ft.",
+      "image": "/images/project_cantilever_duplex_1784442402013.jpg",
+      "description": "A sleek modern duplex centered around a floating cantilevered steel staircase and an indoor glass planter. This project explores light-well structures to illuminate the deep inner cores of narrow plots.",
+      "features": ["Floating Structural Steel Staircase", "Sky-lit Central Light Well", "Rooftop infinity lap pool", "Custom Hand-made Clay Jali Screen"]
+    },
+    {
+      "id": "proj-6",
+      "title": "The Grid Gallery Cafe",
+      "category": "Commercial",
+      "client": "Brew & Canvas",
+      "location": "Dhanmondi, Dhaka",
+      "year": "2024",
+      "area": "2,400 sq.ft.",
+      "image": "/images/project_terracotta_cafe_1784442422587.jpg",
+      "description": "An artistic commercial coffee house combined with a miniature art gallery. Styled with raw brick textures, industrial steel framing, and custom local terracotta tile motifs.",
+      "features": ["Exposed Red Clay Brickwork", "Industrial Matte Black Metalwork", "Rotating Art Display Rails", "Acoustically Isolated Reading Nook"]
+    }
+  ],
+  "team": [
+    {
+      "id": "team-1",
+      "name": "Kazi Fahim Riad",
+      "role": "Founder & Principal Architect",
+      "bio": "Graduate of BUET, Fahim has spent over a decade designing contextual, environment-responsive structures. He leads the design direction at Build Studio, ensuring each project challenges traditional spatial structures.",
+      "image": "/images/team_fahim_riad_1784442473243.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "instagram": "https://instagram.com"
+      }
+    },
+    {
+      "id": "team-2",
+      "name": "Tanzina Ahmed",
+      "role": "Partner & Head of Interior Design",
+      "bio": "With an eye for warm minimalism and rich natural textures, Tanzina designs interior spaces that flow naturally from the outer architectural shell, combining function with curated craftsmanship.",
+      "image": "/images/team_tanzina_ahmed_1784442487103.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "instagram": "https://instagram.com"
+      }
+    },
+    {
+      "id": "team-3",
+      "name": "Zubair Chowdhury",
+      "role": "Senior Architectural Designer",
+      "bio": "Zubair specializes in complex digital model configurations and construction detailing. He coordinates all engineering interfaces to ensure the physical building reflects the architectural render precisely.",
+      "image": "/images/team_zubair_chowdhury_1784442501892.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com"
+      }
+    },
+    {
+      "id": "team-4",
+      "name": "Farhan Karim",
+      "role": "Director of Projects & Supervision",
+      "bio": "A veteran construction supervisor, Farhan leads our on-site team, managing contractor relationships, concrete batch testing, and structural compliance audits with military-like precision.",
+      "image": "/images/team_farhan_karim_1784442517852.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com"
+      }
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Contextual Dialogue",
+      "subtitle": "Listening & Site Survey",
+      "desc": "We start with deep conversations to understand your lifestyle, dreams, and budget constraints. This is followed by a meticulous study of your plot—sun angles, wind flows, local heritage, and trees."
+    },
+    {
+      "step": "02",
+      "title": "Framing the Concept",
+      "subtitle": "Sketches & Spatial Blueprints",
+      "desc": "We develop initial spatial block schemas and 3D architectural massing studies. We explore volumetric layout frames to establish how light, ventilation, and movement flows through your future building."
+    },
+    {
+      "step": "03",
+      "title": "Tectonic Refinement",
+      "subtitle": "Detailed Drawings & BOQ",
+      "desc": "Once the layout is approved, we generate comprehensive structural, electrical, plumbing, and material specification sheets. We compile a transparent Bill of Quantities (BOQ) to prevent budget creep."
+    },
+    {
+      "step": "04",
+      "title": "Supervised Manifestation",
+      "subtitle": "Site Supervision & Delivery",
+      "desc": "We don't just hand over drawings; we live on-site. Our team conducts rigorous periodic inspections to audit reinforcement bars, concrete pouring, wall finishes, and custom cabinetry joineries."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "S. M. Chowdhury",
+      "company": "Owner, Concrete Frame House",
+      "quote": "Collaborating with Build Studio was a revelation. They didn't just build a house; they shaped a living sculpture. The natural light flowing into our double-height lounge makes us feel connected to the sky and trees every day.",
+      "rating": 5,
+      "image": "/images/client_matin_rahman_1784442537351.jpg"
+    },
+    {
+      "id": "test-2",
+      "name": "Rubina Rahman",
+      "company": "CEO, Aura Group Ltd.",
+      "quote": "Our office is now a powerful recruitment asset. Employee energy and productivity have soared since we moved into the biophilic Banani workspace designed by Build Studio. Their focus on light and spatial circulation is unmatched.",
+      "rating": 5,
+      "image": "/images/client_samira_hossain_1784442551127.jpg"
+    },
+    {
+      "id": "test-3",
+      "name": "Dr. Imtiaz Ahmed",
+      "company": "Client, Sreemangal Retreat",
+      "quote": "They turned our vacation plot into a slice of pure tranquility. The way they preserved the existing trees and configured our brick walkways around water bodies shows their deep respect for the natural environment.",
+      "rating": 5,
+      "image": "/images/client_rashidul_bari_1784442566230.jpg"
+    }
+  ]
+}
