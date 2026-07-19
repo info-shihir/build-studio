@@ -23,7 +23,11 @@ export default function About({ about, stats }: AboutProps) {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" as const },
+    },
   };
 
   // Assign icons matching the stats dynamically
@@ -112,7 +116,7 @@ export default function About({ about, stats }: AboutProps) {
               <motion.div
                 id={`about-pillar-card-${idx}`}
                 variants={itemVariants}
-                whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3, ease: "easeOut" } }}
+                whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3, ease: "easeOut" as const } }}
                 key={idx}
                 className={`p-8 rounded-2xl transition-all duration-300 relative group overflow-hidden liquid-glass-card ${
                   theme === "dark" 
