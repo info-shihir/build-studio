@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import "../index.css";
 
-const siteTitle = "InFramed Architects | Framing Spaces, Inspiring Lives";
+const siteTitle = "Build Studio | Innovative Exterior & Interior Design";
 const siteDescription =
-  "InFramed Architects is a premier full-service architectural, interior design, and master planning consultancy based in Dhaka, Bangladesh.";
+  "Build Studio designs and constructs innovative interior and exterior solutions, creating premium modern spaces in Dhaka, Bangladesh.";
 
 export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
   keywords: [
-    "InFramed",
-    "InFramed Architects",
+    "Build Studio",
     "Architecture",
     "Interior Design",
+    "Exterior Design",
     "Dhaka",
     "Bangladesh",
     "Banani",
@@ -21,18 +21,16 @@ export const metadata: Metadata = {
     "duplex design",
     "commercial office interior",
   ],
-  authors: [{ name: "InFramed Architects" }],
+  authors: [{ name: "Build Studio" }],
   openGraph: {
     type: "website",
     title: siteTitle,
-    description:
-      "Premier full-service architectural, interior design, and master planning consultancy based in Dhaka, Bangladesh.",
+    description: siteDescription,
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
-    description:
-      "Premier full-service architectural, interior design, and master planning consultancy based in Dhaka, Bangladesh.",
+    description: siteDescription,
   },
 };
 
