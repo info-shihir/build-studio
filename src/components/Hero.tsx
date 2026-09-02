@@ -1,17 +1,18 @@
 import { useState, useEffect, useCallback } from "react";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { HeroSlide } from "../types";
+import { HeroSlide, CompanyMeta } from "../types";
 import SafeImage from "./SafeImage";
-import { useTheme } from "../context/ThemeContext";
+import SiteContainer from "./SiteContainer";
 
 interface HeroProps {
   slides: HeroSlide[];
+  company: CompanyMeta;
 }
 
-export default function Hero({ slides }: HeroProps) {
+export default function Hero({ slides, company }: HeroProps) {
   const [current, setCurrent] = useState(0);
-  const { theme } = useTheme();
 
   const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -29,7 +30,7 @@ export default function Hero({ slides }: HeroProps) {
   }, [nextSlide]);
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden bg-[#121212]">
+    <section id="home" className="relative min-h-[100dvh] md:h-screen w-full overflow-hidden bg-[#121212]">
       {/* Background Slides */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -53,16 +54,12 @@ export default function Hero({ slides }: HeroProps) {
       </AnimatePresence>
 
       {/* Liquid fluid background ambient orbs */}
-      <div className={`absolute top-1/3 left-10 w-[350px] h-[350px] rounded-full opacity-60 blur-[110px] pointer-events-none z-15 ${theme === "dark" ? "liquid-orb-dark-1" : "liquid-orb-1"}`} />
-      <div className={`absolute bottom-1/4 right-10 w-[400px] h-[400px] rounded-full opacity-40 blur-[130px] pointer-events-none z-15 ${theme === "dark" ? "liquid-orb-dark-2" : "liquid-orb-2"}`} />
+      <div className="absolute top-1/3 left-4 sm:left-10 w-[220px] sm:w-[350px] h-[220px] sm:h-[350px] rounded-full opacity-60 blur-[110px] pointer-events-none z-15 liquid-orb-dark-1" />
+      <div className="absolute bottom-1/4 right-4 sm:right-10 w-[260px] sm:w-[400px] h-[260px] sm:h-[400px] rounded-full opacity-40 blur-[130px] pointer-events-none z-15 liquid-orb-dark-2" />
 
       {/* Hero content container */}
-      <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
-        <div className={`p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden backdrop-blur-xl transition-colors duration-500 max-w-lg lg:max-w-xl ${
-          theme === "dark" 
-            ? "glass-panel-dark" 
-            : "glass-panel-light"
-        }`}>
+      <SiteContainer className="relative z-20 min-h-[inherit] flex flex-col justify-center pt-24 pb-36 sm:pt-28 sm:pb-32 md:pt-0 md:pb-0 md:h-full">
+        <div className="p-5 sm:p-8 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden backdrop-blur-xl transition-colors duration-500 w-full max-w-lg lg:max-w-xl glass-panel-dark">
           {/* Subtle glossy glass border highlights */}
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
           <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
@@ -79,102 +76,85 @@ export default function Hero({ slides }: HeroProps) {
               <div className="inline-flex items-center space-x-2">
                 <span className="h-[1px] w-6 bg-[#c5a880]" />
                 <span className="font-mono text-[10px] text-[#c5a880] uppercase tracking-widest font-semibold">
-                  Build Studio
+                  {company.shortName}
                 </span>
               </div>
 
-              <h1 id="hero-title" className={`font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight transition-colors duration-300 ${theme === "dark" ? "text-white" : "text-[#0a0a0a]"}`}>
+              <h1 id="hero-title" className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight transition-colors duration-300 text-white">
                 {slides[current].title}
               </h1>
 
-              <p id="hero-subtitle" className={`font-sans text-xs sm:text-sm tracking-wide font-light leading-relaxed max-w-md transition-colors duration-300 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
+              <p id="hero-subtitle" className="font-sans text-xs sm:text-sm tracking-wide font-light leading-relaxed max-w-md transition-colors duration-300 text-gray-300">
                 {slides[current].subtitle}
               </p>
 
-              <div className="pt-2 flex flex-wrap gap-3">
-                <a
+              <div className="pt-2 flex flex-col sm:flex-row flex-wrap gap-3">
+                <Link
                   id="hero-cta-primary"
                   href={slides[current].link}
-                  className="glass-btn-gold inline-flex items-center space-x-2.5 px-6 py-3 text-[#0a0a0a] font-display text-[10px] tracking-widest uppercase font-bold rounded-md transition-all duration-300 group"
+                  className="glass-btn-gold inline-flex items-center justify-center space-x-2.5 px-6 py-3.5 sm:py-3 text-[#0a0a0a] font-display text-[10px] tracking-widest uppercase font-bold rounded-md transition-all duration-300 group w-full sm:w-auto"
                 >
                   <span>{slides[current].cta}</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1.5" />
-                </a>
-                <a
+                </Link>
+                <Link
                   id="hero-cta-secondary"
-                  href="#about"
-                  className={`inline-flex items-center px-6 py-3 font-display text-[10px] tracking-widest uppercase font-bold rounded-md transition-all duration-300 ${
-                    theme === "dark"
-                      ? "glass-btn-light text-white hover:text-[#c5a880]"
-                      : "glass-btn-dark text-[#0a0a0a] hover:text-[#a98d65]"
-                  }`}
+                  href="/about"
+                  className="inline-flex items-center justify-center px-6 py-3.5 sm:py-3 font-display text-[10px] tracking-widest uppercase font-bold rounded-md transition-all duration-300 glass-btn-light text-white hover:text-[#c5a880] w-full sm:w-auto"
                 >
                   Our Philosophy
-                </a>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
-      </div>
+      </SiteContainer>
 
-      {/* Slide Navigation Buttons */}
-      <div className="absolute bottom-10 right-4 sm:right-10 z-30 flex items-center space-x-3">
-        <button
-          id="hero-prev-btn"
-          onClick={prevSlide}
-          className={`p-3.5 rounded-full border backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 ${
-            theme === "dark"
-              ? "border-white/10 text-white bg-white/5 hover:border-[#c5a880] hover:text-[#c5a880]"
-              : "border-black/10 text-black bg-black/5 hover:border-[#c5a880] hover:text-[#c5a880]"
-          }`}
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="w-4 h-4" />
-        </button>
-        <button
-          id="hero-next-btn"
-          onClick={nextSlide}
-          className={`p-3.5 rounded-full border backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 ${
-            theme === "dark"
-              ? "border-white/10 text-white bg-white/5 hover:border-[#c5a880] hover:text-[#c5a880]"
-              : "border-black/10 text-black bg-black/5 hover:border-[#c5a880] hover:text-[#c5a880]"
-          }`}
-          aria-label="Next slide"
-        >
-          <ChevronRight className="w-4 h-4" />
-        </button>
-      </div>
+      {/* Slide controls — unified bottom bar on mobile */}
+      <div className="absolute bottom-0 inset-x-0 z-30 px-4 sm:px-10 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:pb-10 flex items-center justify-between gap-4">
+        <div id="hero-dots" className="flex items-center space-x-2 backdrop-blur-sm p-1.5 rounded-full border bg-black/20 border-white/5">
+          {slides.map((_, index) => (
+            <button
+              id={`hero-dot-${index}`}
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`h-1.5 transition-all duration-500 rounded-full ${
+                current === index
+                  ? "w-8 bg-[#c5a880]"
+                  : "w-1.5 bg-white/30 hover:bg-white/50"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
 
-      {/* Progress Indicator Dots */}
-      <div className={`absolute bottom-12 left-4 sm:left-10 z-30 flex items-center space-x-2 backdrop-blur-sm p-1.5 rounded-full border ${
-        theme === "dark" ? "bg-black/20 border-white/5" : "bg-white/35 border-black/5"
-      }`}>
-        {slides.map((_, index) => (
+        <div className="flex items-center space-x-2 sm:space-x-3">
           <button
-            id={`hero-dot-${index}`}
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`h-1.5 transition-all duration-500 rounded-full ${
-              current === index 
-                ? "w-8 bg-[#c5a880]" 
-                : theme === "dark"
-                  ? "w-1.5 bg-white/30 hover:bg-white/50"
-                  : "w-1.5 bg-black/25 hover:bg-black/45"
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
+            id="hero-prev-btn"
+            onClick={prevSlide}
+            className="p-3 sm:p-3.5 rounded-full border backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 border-white/10 text-white bg-white/5 hover:border-[#c5a880] hover:text-[#c5a880]"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button
+            id="hero-next-btn"
+            onClick={nextSlide}
+            className="p-3 sm:p-3.5 rounded-full border backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 border-white/10 text-white bg-white/5 hover:border-[#c5a880] hover:text-[#c5a880]"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 hidden md:flex flex-col items-center">
-        <span className={`font-mono text-[8px] tracking-widest uppercase mb-2 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>Scroll Down</span>
+      {/* Scroll indicator — desktop only */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 hidden md:flex flex-col items-center pointer-events-none">
+        <span className="font-mono text-[8px] tracking-widest uppercase mb-2 text-gray-400">Scroll Down</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          className={`w-5 h-8 border rounded-full p-1 flex justify-center backdrop-blur-xs ${
-            theme === "dark" ? "border-white/20 bg-white/5" : "border-black/20 bg-black/5"
-          }`}
+          className="w-5 h-8 border rounded-full p-1 flex justify-center backdrop-blur-xs border-white/20 bg-white/5"
         >
           <div className="w-1.5 h-1.5 bg-[#c5a880] rounded-full" />
         </motion.div>
@@ -182,4 +162,3 @@ export default function Hero({ slides }: HeroProps) {
     </section>
   );
 }
-

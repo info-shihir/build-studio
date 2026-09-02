@@ -1,6 +1,6 @@
 {
-  "name": "Built Studio",
-  "description": "A premium, fully responsive, and SEO-optimized architectural & interior design portfolio for Built Studio.",
+  "name": "Arshia Global BD",
+  "description": "A premium corporate website for Arshia Global BD (Pvt.) Limited — real estate, contracting, export-import, and supply.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

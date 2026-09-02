@@ -12,8 +12,8 @@ import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { getListedServices } from "./lib/services";
 
-import { useTheme } from "./context/ThemeContext";
 import siteContent from "./data/content.json";
 import { SiteContent } from "./types";
 
@@ -39,7 +39,6 @@ function AnimatedSection({ children, id }: AnimatedSectionProps) {
 }
 
 export default function App() {
-  const { theme } = useTheme();
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -50,11 +49,7 @@ export default function App() {
   return (
     <div 
       id="applet-viewport" 
-      className={`min-h-screen transition-colors duration-500 overflow-x-hidden selection:bg-[#c5a880]/30 relative ${
-        theme === "dark"
-          ? "bg-[#151413] text-[#f4f4f5] selection:text-white"
-          : "bg-[#f8f6f0] text-[#0a0a0a] selection:text-[#0a0a0a]"
-      }`}
+      className="min-h-screen transition-colors duration-500 overflow-x-hidden selection:bg-[#c5a880]/30 relative bg-[#151413] text-[#f4f4f5] selection:text-white"
     >
       {/* Scroll Progress Bar */}
       <motion.div
@@ -64,7 +59,7 @@ export default function App() {
       />
 
       {/* Background Floral Pattern Overlay */}
-      <div className="absolute inset-0 floral-bg pointer-events-none opacity-[0.06] dark:opacity-[0.035] mix-blend-multiply dark:mix-blend-overlay" />
+      <div className="absolute inset-0 floral-bg pointer-events-none opacity-[0.035] mix-blend-overlay" />
 
       {/* Elegant initial page load entrance animation */}
       <motion.div
@@ -80,16 +75,16 @@ export default function App() {
         {/* Main Content Sections */}
         <main id="main-content">
           {/* Home / Hero Section */}
-          <Hero slides={content.hero.slides} />
+          <Hero slides={content.hero.slides} company={content.company} />
 
           {/* About Section */}
           <AnimatedSection id="animated-about">
-            <About about={content.about} stats={content.company.stats} />
+            <About about={content.about} stats={content.company.stats} company={content.company} />
           </AnimatedSection>
 
           {/* Services / Expertise */}
           <AnimatedSection id="animated-services">
-            <Services services={content.services} />
+            <Services services={getListedServices()} />
           </AnimatedSection>
 
           {/* Selected Projects */}
@@ -104,7 +99,7 @@ export default function App() {
 
           {/* Professional Core Team */}
           <AnimatedSection id="animated-team">
-            <Team team={content.team} />
+            <Team departments={content.teamDepartments} />
           </AnimatedSection>
 
           {/* Client Testimonials */}

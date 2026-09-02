@@ -1,26 +1,28 @@
 {
   "company": {
-    "name": "Build Studio",
-    "shortName": "Build Studio",
-    "tagline": "Innovative Exterior & Interior Design",
-    "description": "Build Studio is involved in the design and construction of innovative Interior & Exterior solutions, creating premium, modern spaces that blend contemporary aesthetics with outstanding functionality.",
-    "foundedYear": "2020",
+    "name": "Arshia Global BD (Pvt.) Limited",
+    "shortName": "Arshia Global BD",
+    "tagline": "Real Estate · Contractor · Export-Import · Supplier",
+    "description": "Arshia Global BD (Pvt.) Limited is a private company registered in Bangladesh, engaged in real estate development, construction contracting, infrastructure engineering, international trade, supply distribution, consultancy, IT-enabled services, and government procurement.",
+    "foundedYear": "2026",
+    "logo": "/images/logo.jpg",
+    "registeredOffice": "House: 02, Road: 05, West Agargaon, Sher-e-Bangla Nagar, Dhaka-1207, Bangladesh",
+    "regulatoryNote": "All business activities are undertaken after obtaining necessary permission from the Government, concerned authority, or competent authority before commencement of business, as required by law.",
     "stats": [
-      { "id": "stat-1", "value": "150+", "label": "Projects Completed", "sub": "Residential, commercial & public spaces" },
-      { "id": "stat-2", "value": "6+", "label": "Years Experience", "sub": "Delivering excellence since 2020" },
-      { "id": "stat-3", "value": "12+", "label": "Design Awards", "sub": "Recognized for spatial innovation" },
-      { "id": "stat-4", "value": "25+", "label": "Expert Team", "sub": "Creative minds & technical hands" }
+      { "id": "stat-1", "value": "2026", "label": "Established", "sub": "Serving Bangladesh's built environment & trade economy" },
+      { "id": "stat-2", "value": "5+", "label": "Business Verticals", "sub": "Real estate, construction, trade & consultancy" },
+      { "id": "stat-3", "value": "e-GP", "label": "Procurement Ready", "sub": "BPPA & government tender capable" },
+      { "id": "stat-4", "value": "RAJUK", "label": "Regulatory Compliant", "sub": "WASA, Titas Gas, DESCO approvals" }
     ],
     "contact": {
-      "address": "Road 17, Rupsa tower, Banani, Dhaka, Bangladesh, 1212",
-      "email": "studiobuiltin@gmail.com",
-      "phone": "+880 1829-601426",
+      "address": "House: 02, Road: 05, West Agargaon, Sher-e-Bangla Nagar, Dhaka-1207, Bangladesh",
+      "email": "info@arshialtd.com",
+      "phone": "+880 1646-730300",
       "hours": "Saturday - Thursday: 9:00 AM - 6:00 PM",
       "socials": {
-        "facebook": "https://www.facebook.com/share/1DE82yDv87/",
-        "instagram": "https://instagram.com/built_studio",
-        "linkedin": "https://linkedin.com/company/builtstudio",
-        "pinterest": "https://pinterest.com/builtstudio"
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://instagram.com/",
+        "linkedin": "https://linkedin.com/company/arshiaglobalbd"
       }
     }
   },
@@ -28,254 +30,552 @@
     "slides": [
       {
         "id": "slide-1",
-        "title": "Sculpting Spaces with Light and Frame",
-        "subtitle": "Discover our signature residential architecture that seamlessly blends contemporary aesthetics with tropical responsive design.",
-        "image": "/images/hero_residential_villa_1784442322493.jpg",
-        "cta": "Explore Portfolio",
-        "link": "#projects"
+        "title": "Real Estate & Property Development",
+        "subtitle": "Apartments, land, buildings, shopping complexes, and community centers — developed, purchased, sold, leased, and managed across Bangladesh and beyond.",
+        "image": "/images/real-estate.jpg",
+        "cta": "Explore Real Estate",
+        "link": "/services/real-estate"
       },
       {
         "id": "slide-2",
-        "title": "Human-Centric Workspace Interiors",
-        "subtitle": "Crafting premium corporate offices that foster collaboration, enhance employee well-being, and express brand identity.",
-        "image": "/images/hero_biophilic_office_1784442437556.jpg",
-        "cta": "View Services",
-        "link": "#services"
+        "title": "Construction & Contracting",
+        "subtitle": "1st class contracting for multi-storied buildings, roads, bridges, highways, and engineering works — with RAJUK, WASA, Titas Gas, and utility approvals.",
+        "image": "/images/construction.jpg",
+        "cta": "View Contracting",
+        "link": "/services/contractor"
       },
       {
         "id": "slide-3",
-        "title": "Timeless Brutalist & Concrete Forms",
-        "subtitle": "Harnessing the raw, honest texture of exposed concrete to forge structures that stand as sculptural land markers.",
-        "image": "/images/hero_brutalist_facade_1784442452943.jpg",
-        "cta": "Get in Touch",
-        "link": "#contact"
+        "title": "Export-Import & Global Trade",
+        "subtitle": "Import-export of construction materials, textiles, machinery, and engineering goods — with logistics, warehousing, and customs compliance.",
+        "image": "/images/import-export.jpg",
+        "cta": "Explore Trade",
+        "link": "/services/export-import"
+      },
+      {
+        "id": "slide-4",
+        "title": "Industrial Supply & Distribution",
+        "subtitle": "Nationwide supply of construction materials, building supplies, and industrial equipment — stocked, sourced, and delivered with certified quality.",
+        "image": "/images/supplier.png",
+        "cta": "View Supply Services",
+        "link": "/services/supplier"
       }
     ]
   },
   "about": {
-    "title": "Our Philosophy",
-    "subtitle": "At Build Studio, innovative design meets precise construction.",
+    "title": "Corporate Profile",
+    "subtitle": "Arshia Global BD (Pvt.) Limited — established to serve Bangladesh's growing built environment and trade economy.",
     "paragraphs": [
-      "At Build Studio, we see design and construction as a unified medium through which interior and exterior environments are structured and human activities are enriched. We coordinate views of nature, pathways of natural light, and fluid layouts so spaces can breathe. Our design language is rooted in modern clarity, sustainable material integrity, and contextual responsiveness.",
-      "Founded on a commitment to outstanding craftsmanship, our practice spans diverse scales—from luxury residential apartments and bespoke corporate office interiors to striking building exteriors and landscape projects. By integrating active construction-site supervision with pure design vision, we ensure each project we design is built with absolute precision."
+      "The name of the Company is Arshia Global BD (Pvt.) Limited. The registered office of the Company shall be situated in Bangladesh.",
+      "The Company is established to carry on diversified business activities including real estate development, construction and contracting, infrastructure engineering, property management, import-export and supply of construction and textile products, engineering and architectural consultancy, IT-enabled services, and participation in government procurement through the e-GP System and BPPA. All objects are implemented after obtaining necessary permission from the Government or concerned competent authority before commencement of business."
     ],
     "pillars": [
       {
-        "title": "Contextual Architecture",
-        "desc": "Every design starts with deep site analysis, embracing local climate, topography, culture, and community context."
+        "title": "Real Estate & Property",
+        "desc": "Development, purchase, sale, lease, and management of apartments, land, buildings, supermarkets, shopping complexes, and community centers — online and offline."
       },
       {
-        "title": "Tropical Responsive Design",
-        "desc": "Specializing in microclimate management through cross-ventilation, double-height voids, and green buffer courts."
+        "title": "Construction & Contracting",
+        "desc": "1st class contractor services for multi-storied residential and commercial buildings, housing estates, and utility connections from RAJUK, WASA, Titas Gas, and DESCO."
       },
       {
-        "title": "Honest Materiality",
-        "desc": "Belief in the beauty of raw textures—exposed concrete, native timber, natural stones, and handcrafted brickwork."
+        "title": "Infrastructure & Engineering",
+        "desc": "Roads, highways, bridges, reservoirs, factories, hotels, educational institutions, and land plotting with full construction engineering capabilities."
+      },
+      {
+        "title": "Trade, Supply & Consultancy",
+        "desc": "Import-export and distribution of construction materials, textiles, machinery, and engineering goods — plus consultancy, ITES, and digital property platforms."
+      },
+      {
+        "title": "Government Procurement",
+        "desc": "Bids and execution of contracts through e-GP, BPPA, and other procurement platforms for government, semi-government, and private sector projects."
       }
     ]
   },
   "services": [
     {
       "id": "serv-1",
-      "title": "Architectural Design",
-      "icon": "Compass",
-      "shortDesc": "Creating bespoke buildings, duplexes, and multi-family residences.",
-      "longDesc": "Our architectural design service encompasses comprehensive space planning, structural coordination, and detailed spatial drafting. We create iconic residential duplexes, vacation retreats, and high-density apartments that focus on natural light, double-height spaces, and seamless transition between indoor and outdoor landscapes.",
-      "features": ["3D Visualizations & Rendering", "Bespoke Residence Planning", "Sustainable Material Strategy", "Structural & MEP Integration"]
+      "slug": "real-estate",
+      "title": "Real Estate",
+      "icon": "Building",
+      "shortDesc": "End-to-end property development, sales, leasing, investment, and asset management across Bangladesh.",
+      "longDesc": "Arshia Global BD carries on the business of real estate, apartments, land, buildings, supermarkets, shopping complexes, community centers, and all forms of permissible property within Bangladesh and elsewhere. We arrange development, purchase, sale, lease, sub-lease, and letting out of residential flats and commercial spaces through both online and offline platforms.",
+      "details": [
+        "We hold, operate, and manage properties for investment, rental income, and commercial purposes — appointing agents, consultants, attorneys, and property managers as required for each transaction.",
+        "Our team supports landowners, developers, and investors with market analysis, legal due diligence, title verification, and structured deal documentation aligned with Bangladesh property law."
+      ],
+      "scope": [
+        "Apartment and flat development & marketing",
+        "Land acquisition, plotting & subdivision",
+        "Commercial showroom & retail leasing",
+        "Shopping complex & community center projects",
+        "Property purchase, sale & sub-lease arrangements",
+        "Online & offline property listing platforms",
+        "Investment property management & rental operations",
+        "Appointment of agents, consultants & legal advisors"
+      ],
+      "features": [
+        "Apartments & Commercial Spaces",
+        "Land & Building Development",
+        "Lease, Sub-Lease & Letting",
+        "Online & Offline Property Platforms",
+        "Title Due Diligence & Legal Support",
+        "Investment & Rental Management",
+        "Brokerage & Transaction Facilitation",
+        "Market Analysis & Feasibility Input"
+      ],
+      "processSteps": [
+        { "title": "Requirement & Site Assessment", "desc": "Understand client goals, budget, and location preferences; shortlist viable land or existing assets." },
+        { "title": "Legal & Title Verification", "desc": "Conduct due diligence, mutation checks, and documentation review before any commitment." },
+        { "title": "Development or Transaction", "desc": "Execute purchase, sale, lease, or development plan with appointed consultants and contractors." },
+        { "title": "Marketing & Handover", "desc": "List, promote, and close deals through online/offline channels; manage handover and occupancy." },
+        { "title": "Ongoing Asset Management", "desc": "Provide rental collection, maintenance coordination, and portfolio reporting where retained." }
+      ],
+      "timeline": "4 – 12 weeks (transaction) · 6 – 24 months (development)",
+      "targetSectors": "Residential apartments, commercial retail, land investors, shopping complexes, community centers, mixed-use developers",
+      "typicalTeam": "Real Estate Advisor, Legal Consultant, Property Manager, Marketing Coordinator, Site Liaison Officer",
+      "tools": "GIS mapping, financial modeling, online property portals, CRM & document management",
+      "methodology": "We develop, purchase, sell, lease, and manage properties through a structured pipeline — from site selection and legal clearance to marketing, transaction closure, and optional long-term asset management.",
+      "compliance": "All property transactions follow applicable land registration, RAJUK/local authority, and tax requirements; business commenced only after necessary permissions."
     },
     {
       "id": "serv-2",
-      "title": "Interior Design",
-      "icon": "Layout",
-      "shortDesc": "Designing high-end residential and functional commercial spaces.",
-      "longDesc": "We redefine interior volumes with custom millwork, curated furniture pieces, and highly tailored lighting designs. From luxury duplex living rooms to modern corporate open-plan offices, we treat interior design as an extension of the architectural shell, ensuring a unified visual flow and superb acoustic, thermal, and spatial comfort.",
-      "features": ["Corporate Workspace Styling", "Luxury Residential Interiors", "Custom Furniture & Joinery", "Lighting & Acoustic Design"]
+      "slug": "contractor",
+      "title": "Contractor",
+      "icon": "HardHat",
+      "shortDesc": "1st class construction, builders, engineering works, and turnkey project delivery with full utility approvals.",
+      "longDesc": "As a 1st class contractor and builder, we acquire land, develop sites, and construct multi-storied residential buildings, housing estates, shopping complexes, and office towers for commercial or residential occupancy. We manage the full construction lifecycle from planning and approvals through handover.",
+      "details": [
+        "We obtain and coordinate approvals from RAJUK, WASA, Titas Gas Transmission Authority, DESCO, and relevant local authorities before commencement of work.",
+        "Our civil engineering team supervises structural works, MEP coordination, finishing, and quality audits to deliver safe, durable buildings on schedule."
+      ],
+      "scope": [
+        "1st class general contracting",
+        "Multi-storied residential & commercial buildings",
+        "Housing estate & gated community construction",
+        "Shopping complex & office tower projects",
+        "Structural, architectural & MEP coordination",
+        "RAJUK, WASA, Titas Gas & DESCO liaison",
+        "Site safety, QA/QC & progress reporting",
+        "Turnkey handover with occupancy support"
+      ],
+      "features": [
+        "1st Class Contractor Services",
+        "Multi-Storied Building Construction",
+        "Housing & Office Projects",
+        "RAJUK & Utility Approvals",
+        "Structural & MEP Supervision",
+        "Site Safety & Quality Control",
+        "Subcontractor & Labour Management",
+        "Defect Liability & Handover Support"
+      ],
+      "processSteps": [
+        { "title": "Pre-Construction Planning", "desc": "Review drawings, BOQ, schedule, and regulatory requirements; mobilize site and approvals." },
+        { "title": "Authority Clearances", "desc": "Secure RAJUK construction approval and utility connections (WASA, gas, power)." },
+        { "title": "Substructure & Superstructure", "desc": "Execute foundation, frame, masonry, and structural works per approved engineering design." },
+        { "title": "MEP & Finishing", "desc": "Complete electrical, plumbing, HVAC, lifts, and interior/exterior finishing to specification." },
+        { "title": "Testing, Handover & Warranty", "desc": "Conduct inspections, occupancy readiness, and handover with defect liability coverage." }
+      ],
+      "timeline": "3 – 24 months depending on building scale and approval cycles",
+      "targetSectors": "Private developers, housing projects, commercial towers, retail complexes, institutional clients",
+      "typicalTeam": "Chief Engineer, Site Supervisor, Safety Officer, RAJUK Liaison Officer, QA/QC Inspector, Planning Engineer",
+      "tools": "AutoCAD, MS Project, BIM coordination, daily site reporting apps, material testing logs",
+      "methodology": "We deliver construction as a 1st class contractor with staged approvals, weekly progress tracking, material quality audits, and transparent client reporting from mobilization to handover.",
+      "compliance": "Worker safety standards, building codes, environmental norms, and all statutory utility and construction permits obtained before work begins."
     },
     {
       "id": "serv-3",
-      "title": "Landscape & Urban Planning",
-      "icon": "Trees",
-      "shortDesc": "Integrating nature back into architecture through custom landscape solutions.",
-      "longDesc": "We design lush courtyard gardens, rooftop terraces, water bodies, and outdoor pavilions that respond to local flora and climate. Our landscape designs focus on rainwater harvesting, natural shade cooling, and visual transitions, making green spaces an integral part of daily life rather than a mere decorative edge.",
-      "features": ["Courtyard & Roof Garden Design", "Water Features & Swimming Pools", "Hardscape & Paving Details", "Native Flora Selection"]
+      "slug": "infrastructure",
+      "title": "Infrastructure",
+      "icon": "Route",
+      "shortDesc": "Roads, bridges, commercial complexes, institutional buildings, and land development at national scale.",
+      "longDesc": "We undertake development and construction of multi-storied commercial buildings, office complexes, department stores, hotels, shopping centres, cinema houses, and educational institutions. We also deliver civil infrastructure — roads, highways, bridges, reservoirs, factories, and other engineering works.",
+      "details": [
+        "Land plotting, real estate development, and property brokerage services complement our infrastructure portfolio for integrated township and corridor projects.",
+        "Projects are executed with survey control, geotechnical input, traffic management plans, and maintenance handover documentation for public and private clients."
+      ],
+      "scope": [
+        "Roads, highways & bridge construction",
+        "Commercial & institutional buildings",
+        "Hotels, shopping centres & cinema complexes",
+        "Educational & healthcare facilities",
+        "Reservoirs, drainage & utility infrastructure",
+        "Factory & industrial civil works",
+        "Land plotting & township development",
+        "Property brokerage & transaction services"
+      ],
+      "features": [
+        "Roads, Highways & Bridges",
+        "Commercial & Institutional Buildings",
+        "Land Plotting & Development",
+        "Property Brokerage Services",
+        "Drainage & Utility Infrastructure",
+        "Industrial & Factory Civil Works",
+        "Survey & Geotechnical Coordination",
+        "Maintenance & Handover Documentation"
+      ],
+      "processSteps": [
+        { "title": "Feasibility & Survey", "desc": "Topographic survey, soil investigation, and route/alignment studies for infrastructure scope." },
+        { "title": "Design & Approvals", "desc": "Engineering design, BOQ preparation, and authority/consultant approval coordination." },
+        { "title": "Earthworks & Foundation", "desc": "Clearing, grading, piling, and substructure works per geotechnical recommendations." },
+        { "title": "Superstructure & Pavement", "desc": "Bridge decks, building frames, road layers, and drainage installation." },
+        { "title": "Commissioning & Maintenance Plan", "desc": "Final inspection, as-built documentation, and maintenance schedule handover." }
+      ],
+      "timeline": "6 – 36 months based on project scale and weather/access constraints",
+      "targetSectors": "Government agencies, private developers, industrial parks, educational trusts, hospitality investors",
+      "typicalTeam": "Infrastructure Engineer, Civil Contractor, Project Manager, Surveyor, Traffic & Safety Coordinator",
+      "tools": "AutoCAD, Civil 3D, MS Project, GIS survey tools, drone mapping (where applicable)",
+      "methodology": "Infrastructure projects follow phased engineering delivery — survey and design validation, staged construction with quality hold points, and documented handover for long-term maintainability.",
+      "compliance": "Environmental clearance, structural safety certification, and authority permits obtained prior to commencement; ongoing site safety monitoring."
     },
     {
       "id": "serv-4",
-      "title": "Consultancy & Supervision",
-      "icon": "Eye",
-      "shortDesc": "Ensuring design fidelity from paper blueprints to real concrete columns.",
-      "longDesc": "An exceptional design is only as good as its execution. We offer rigorous site supervision, quality audits, material sourcing consultancy, and local regulatory approval facilitation (RAJUK, CDA). Our project architects closely collaborate with contractors and structural engineers to guarantee zero design compromises.",
-      "features": ["Regulatory Approval Coordination", "Rigorous Weekly Site Audits", "Bill of Quantities (BOQ) Auditing", "Vendor & Material Sourcing"]
+      "slug": "export-import",
+      "title": "Export-Import",
+      "icon": "Ship",
+      "shortDesc": "International trade in construction, textile, machinery, and engineering goods with full logistics support.",
+      "longDesc": "We operate as importers, exporters, suppliers, distributors, indenters, traders, and commission agents for construction materials, building supplies, engineering goods, machinery, equipment, tools, engineering chemicals, textile products, fabrics, garments, yarn, fibres, and allied products.",
+      "details": [
+        "End-to-end trade services include supplier sourcing, letter of credit facilitation, customs clearance, inland transportation, warehousing, and repackaging for project or factory delivery.",
+        "We serve manufacturers, contractors, and retailers with competitive landed pricing, compliant documentation, and shipment tracking from origin port to final destination."
+      ],
+      "scope": [
+        "Construction & building material import-export",
+        "Textile, yarn, fabric & garment trade",
+        "Industrial machinery & engineering equipment",
+        "Tools, chemicals & spare parts sourcing",
+        "Indenting, trading & commission agency",
+        "LC, shipping & customs documentation",
+        "Bonded & general warehousing",
+        "Inland transport & last-mile delivery"
+      ],
+      "features": [
+        "Construction Material Trade",
+        "Textile & Garment Import-Export",
+        "Machinery & Engineering Goods",
+        "Logistics & Warehousing",
+        "Customs Clearance & Documentation",
+        "Supplier Sourcing & Indenting",
+        "Shipment Tracking & Insurance Coordination",
+        "Landed Cost & Duty Advisory"
+      ],
+      "processSteps": [
+        { "title": "Inquiry & Sourcing", "desc": "Identify specifications, supplier options, and landed cost estimates for client approval." },
+        { "title": "Commercial & Shipping Docs", "desc": "Prepare PI/PO, LC or TT terms, packing lists, and shipping instructions." },
+        { "title": "Customs & Port Clearance", "desc": "Manage import/export declarations, duty payment, and port handling." },
+        { "title": "Warehousing & Distribution", "desc": "Store, consolidate, and dispatch goods to project sites or factory locations nationwide." },
+        { "title": "Post-Delivery Support", "desc": "Handle claims, short-shipment resolution, and repeat order planning." }
+      ],
+      "timeline": "2 – 8 weeks from order confirmation to delivery (shipment & customs dependent)",
+      "targetSectors": "Construction firms, garment manufacturers, industrial plants, distributors, government procurement",
+      "typicalTeam": "Trade Manager, Customs Broker, Logistics Coordinator, Documentation Officer, Warehouse Supervisor",
+      "tools": "ERP trade modules, customs e-filing, freight tracking portals, inventory & bond management systems",
+      "methodology": "Trade operations run on documented purchase-to-delivery workflows with verified suppliers, compliant shipping papers, and tracked logistics at every milestone.",
+      "compliance": "Bangladesh import-export regulations, HS code classification, LC/TT banking norms, and ethical sourcing standards applied to all shipments."
+    },
+    {
+      "id": "serv-5",
+      "slug": "supplier",
+      "title": "Supplier",
+      "icon": "Package",
+      "shortDesc": "Nationwide distribution, stocking, and supply of construction materials, equipment, and industrial products.",
+      "longDesc": "We import, export, purchase, sell, distribute, stock, store, market, and deal in construction materials, building supplies, industrial equipment, and textile products. We serve contractors, developers, manufacturers, and businesses with reliable supply chain coverage.",
+      "details": [
+        "Bulk and scheduled deliveries are supported from warehouse stock or direct mill/factory procurement with quality certificates and batch traceability where required.",
+        "Dedicated account management helps repeat clients with annual rate contracts, just-in-time delivery windows, and consolidated invoicing."
+      ],
+      "scope": [
+        "Cement, steel, aggregates & finishing materials",
+        "Electrical, plumbing & MEP supplies",
+        "Industrial & construction equipment",
+        "Textile raw materials & accessories",
+        "Warehouse stocking & inventory management",
+        "Bulk order fulfilment & scheduled delivery",
+        "Quality inspection & batch documentation",
+        "Vendor-managed inventory for key accounts"
+      ],
+      "features": [
+        "Bulk Material Supply",
+        "Industrial Equipment Distribution",
+        "Nationwide Stock & Delivery",
+        "Quality-Certified Products",
+        "Warehouse & Inventory Management",
+        "Scheduled & JIT Deliveries",
+        "Rate Contracts for Repeat Clients",
+        "On-Site Delivery Coordination"
+      ],
+      "processSteps": [
+        { "title": "Requirement Capture", "desc": "Confirm specifications, quantities, delivery schedule, and site access constraints." },
+        { "title": "Procurement & QC", "desc": "Source from approved vendors; inspect and document quality before dispatch." },
+        { "title": "Stock & Pick", "desc": "Allocate from warehouse inventory or trigger direct supplier shipment." },
+        { "title": "Logistics & Delivery", "desc": "Route planning, loading, and proof-of-delivery to site or factory." },
+        { "title": "Invoice & Reorder", "desc": "Close billing cycle and set up repeat supply schedules where applicable." }
+      ],
+      "timeline": "1 – 4 weeks for standard stocked items; longer for specialized imports",
+      "targetSectors": "Contractors, developers, garment factories, manufacturing plants, retail hardware dealers",
+      "typicalTeam": "Supply Chain Manager, Procurement Specialist, Quality Inspector, Warehouse Team Lead, Delivery Coordinator",
+      "tools": "Inventory management system, supplier portals, mobile POD capture, quality audit checklists",
+      "methodology": "Supply operations prioritize certified products, optimized bulk logistics, and transparent order tracking from PO confirmation through proof of delivery.",
+      "compliance": "Supplier quality audits, material test certificates where applicable, and accurate tax invoicing on all supply transactions."
+    },
+    {
+      "id": "serv-6",
+      "slug": "consultancy",
+      "title": "Consultancy & e-GP",
+      "icon": "Briefcase",
+      "shortDesc": "Engineering consultancy, ITES, feasibility studies, and government procurement through e-GP & BPPA.",
+      "longDesc": "We provide engineering, architectural, and general consultancy including feasibility studies, project profiles, surveying, and technical proposals. Our ITES division delivers software development, real estate management systems, and digital marketing solutions.",
+      "details": [
+        "We participate in e-GP, BPPA, and other public procurement platforms — preparing tenders, submitting bids, executing awarded contracts, and completing handover for government, semi-government, and private sector clients.",
+        "Consultancy engagements cover pre-investment studies, detailed project reports, supervision services, and post-implementation reviews aligned with client funding and approval requirements."
+      ],
+      "scope": [
+        "Feasibility studies & project profiles",
+        "Engineering & architectural consultancy",
+        "Surveying & site investigation reports",
+        "Technical & financial proposal preparation",
+        "Software & IT-enabled services (ITES)",
+        "Real estate management systems (REMS)",
+        "e-GP & BPPA tender preparation & submission",
+        "Contract execution & completion reporting"
+      ],
+      "features": [
+        "Engineering & Architectural Consultancy",
+        "ITES & Software Solutions",
+        "e-GP & BPPA Tender Execution",
+        "Feasibility Studies & Project Profiles",
+        "Survey & Investigation Services",
+        "Tender Documentation & Bid Management",
+        "Project Supervision & Reporting",
+        "Digital Marketing & REMS Platforms"
+      ],
+      "processSteps": [
+        { "title": "Scope & Terms Definition", "desc": "Agree consultancy or tender scope, timeline, deliverables, and fee structure." },
+        { "title": "Study / Proposal Development", "desc": "Prepare feasibility, DPP, drawings, or compliant tender documents." },
+        { "title": "Submission & Approval", "desc": "Submit to client or e-GP portal; respond to queries and clarifications." },
+        { "title": "Execution & Supervision", "desc": "Deliver consultancy milestones or implement awarded contract works." },
+        { "title": "Completion & Reporting", "desc": "Final reports, as-built documentation, and procurement closure certificates." }
+      ],
+      "timeline": "2 – 12 weeks for studies; contract duration varies by tender award",
+      "targetSectors": "Government ministries, LGED-type agencies, private developers, NGOs, international organizations",
+      "typicalTeam": "Consultant Engineer, Architect, IT Specialist, Procurement Officer, Project Manager, Survey Team",
+      "tools": "e-GP portal, BPPA systems, MS Project, REMS platforms, CAD & estimation software",
+      "methodology": "Consultancy and procurement services combine technical rigour with compliance-first documentation — every study, bid, and deliverable is structured for auditability and client approval gates.",
+      "compliance": "e-GP/BPPA procurement rules, PPR 2008 alignment, IT policy where applicable, and all business activities undertaken after required government permissions."
     }
   ],
   "projects": [
     {
       "id": "proj-1",
-      "title": "The Concrete Frame House",
-      "category": "Residential",
-      "client": "Mr. & Mrs. Chowdhury",
-      "location": "Gulshan, Dhaka",
-      "year": "2023",
-      "area": "7,500 sq.ft.",
-      "image": "/images/project_brutalist_concrete_1784442339294.jpg",
-      "description": "A striking brutalist-inspired residential masterpiece featuring raw off-form exposed concrete, massive double-height glass panels, and an internal courtyard. Designed to optimize natural south wind and shade from intense tropical heat.",
-      "features": ["Internal Courtyard with Water Body", "Double-Height Lounge", "Exposed Cast-in-Situ Concrete Walls", "Automated Smart Ventilation Controls"]
+      "title": "Mixed-Use Apartment Complex",
+      "category": "Real Estate",
+      "client": "Private Development",
+      "location": "Dhaka, Bangladesh",
+      "year": "2026",
+      "area": "Multi-Storied",
+      "image": "/images/project_residential.jpg",
+      "description": "Development of a multi-storied residential and commercial complex with apartments, retail showrooms, and community facilities — marketed through online and offline platforms.",
+      "features": ["Residential Apartments", "Commercial Retail Spaces", "Community Center", "Property Management"]
     },
     {
       "id": "proj-2",
-      "title": "Aura HQ & Workspace",
-      "category": "Commercial",
-      "client": "Aura Group Ltd.",
-      "location": "Banani, Dhaka",
-      "year": "2024",
-      "area": "12,000 sq.ft.",
-      "image": "/images/project_biophilic_office_1784442356790.jpg",
-      "description": "A high-performance modern corporate headquarters centered on employee well-being. Built around a massive green biophilic atrium, featuring modular desks, flexible acoustic meeting pods, and warm lighting grids.",
-      "features": ["Biophilic Atrium", "Acoustically Treated Conference Pods", "Ergonomic Custom workstations", "Zero-Waste Cafeteria Space"]
+      "title": "RAJUK-Approved Housing Estate",
+      "category": "Contractor",
+      "client": "Housing Development",
+      "location": "Dhaka, Bangladesh",
+      "year": "2026",
+      "area": "Housing Project",
+      "image": "/images/project_commercial.jpg",
+      "description": "Construction of a multi-storied housing estate with RAJUK approval and utility connections from WASA, Titas Gas, and DESCO for residential occupancy.",
+      "features": ["RAJUK Construction Approval", "WASA Water Connection", "Titas Gas Connection", "DESCO Power Supply"]
     },
     {
       "id": "proj-3",
-      "title": "The Glass Pavilion",
-      "category": "Interior",
-      "client": "Private Client",
-      "location": "Uttara, Dhaka",
-      "year": "2022",
-      "area": "4,200 sq.ft.",
-      "image": "/images/project_sunset_penthouse_1784442374506.jpg",
-      "description": "A premium penthouse interior design combining sleek brass fittings, Italian marble, and frameless slide-fold glass doors. Designed to frame panoramic sunset views of the Uttara lake.",
-      "features": ["Lake-facing Floating Balcony", "Italian Statuario Marble Flooring", "Bespoke Walnut Wardrobes", "Concealed Warm-dim Ambient Lighting"]
+      "title": "Highway Bridge & Road Works",
+      "category": "Infrastructure",
+      "client": "Infrastructure Contract",
+      "location": "Bangladesh",
+      "year": "2026",
+      "area": "Engineering Works",
+      "image": "/images/project_bridge.jpg",
+      "description": "Civil engineering works including highway bridge construction, approach roads, and associated infrastructure development and maintenance.",
+      "features": ["Bridge Construction", "Highway & Road Works", "Structural Engineering", "Infrastructure Maintenance"]
     },
     {
       "id": "proj-4",
-      "title": "Verdant Courtyard Retreat",
-      "category": "Landscape",
-      "client": "Rahman Estates",
-      "location": "Sreemangal, Sylhet",
-      "year": "2023",
-      "area": "1.5 Acres",
-      "image": "/images/project_tea_retreat_1784442388855.jpg",
-      "description": "An expansive weekend retreat landscaping project featuring a natural brick-paved walking track, a tranquil koi pond, native bamboo groves, and a minimalist timber deck for morning yoga and tea.",
-      "features": ["Natural Wetland Preservation", "Handcrafted Terracotta Paving", "Reclaimed Timber Yoga Platform", "Zero-Chemical Bio-Filter Koi Pond"]
+      "title": "Construction Materials Import",
+      "category": "Export-Import",
+      "client": "National Distributor",
+      "location": "Chittagong Port",
+      "year": "2026",
+      "area": "Bulk Shipment",
+      "image": "/images/project_import.jpg",
+      "description": "End-to-end import of construction and building materials including customs clearance, warehousing, and nationwide distribution to project sites.",
+      "features": ["Import Facilitation", "Customs Clearance", "Warehousing", "Nationwide Distribution"]
     },
     {
       "id": "proj-5",
-      "title": "Nirvana Duplex",
-      "category": "Residential",
-      "client": "Engr. Zubayer",
-      "location": "Bashundhara R/A, Dhaka",
-      "year": "2021",
-      "area": "5,800 sq.ft.",
-      "image": "/images/project_cantilever_duplex_1784442402013.jpg",
-      "description": "A sleek modern duplex centered around a floating cantilevered steel staircase and an indoor glass planter. This project explores light-well structures to illuminate the deep inner cores of narrow plots.",
-      "features": ["Floating Structural Steel Staircase", "Sky-lit Central Light Well", "Rooftop infinity lap pool", "Custom Hand-made Clay Jali Screen"]
+      "title": "Textile Raw Material Supply",
+      "category": "Supplier",
+      "client": "Garment Manufacturer",
+      "location": "Dhaka, Bangladesh",
+      "year": "2026",
+      "area": "Bulk Supply",
+      "image": "/images/project_supply.jpg",
+      "description": "Procurement, stocking, and supply of textile raw materials, yarn, fabrics, and accessories to garment manufacturing facilities.",
+      "features": ["Textile Raw Materials", "Yarn & Fabric Supply", "Bulk Stock Management", "Timely Delivery"]
     },
     {
       "id": "proj-6",
-      "title": "The Grid Gallery Cafe",
-      "category": "Commercial",
-      "client": "Brew & Canvas",
-      "location": "Dhanmondi, Dhaka",
-      "year": "2024",
-      "area": "2,400 sq.ft.",
-      "image": "/images/project_terracotta_cafe_1784442422587.jpg",
-      "description": "An artistic commercial coffee house combined with a miniature art gallery. Styled with raw brick textures, industrial steel framing, and custom local terracotta tile motifs.",
-      "features": ["Exposed Red Clay Brickwork", "Industrial Matte Black Metalwork", "Rotating Art Display Rails", "Acoustically Isolated Reading Nook"]
+      "title": "Government e-GP Contract",
+      "category": "Consultancy",
+      "client": "Government Entity",
+      "location": "Bangladesh",
+      "year": "2026",
+      "area": "Public Procurement",
+      "image": "/images/project_egp.jpg",
+      "description": "Successful bid submission, contract execution, and project completion through the Electronic Government Procurement (e-GP) System under BPPA guidelines.",
+      "features": ["e-GP Tender Submission", "BPPA Compliance", "Contract Execution", "Project Completion"]
     }
   ],
-  "team": [
+  "teamDepartments": [
     {
-      "id": "team-1",
-      "name": "Kazi Fahim Riad",
-      "role": "Founder & Principal Architect",
-      "bio": "Graduate of BUET, Fahim has spent over a decade designing contextual, environment-responsive structures. He leads the design direction at Build Studio, ensuring each project challenges traditional spatial structures.",
-      "image": "/images/team_fahim_riad_1784442473243.jpg",
-      "socials": {
-        "linkedin": "https://linkedin.com",
-        "instagram": "https://instagram.com"
-      }
+      "id": "leaders",
+      "title": "Leaders",
+      "description": "Strategic leadership guiding Arshia Global BD across real estate, construction, trade, and corporate governance.",
+      "members": [
+        {
+          "id": "team-1",
+          "name": "Noor-E-Shams",
+          "credentials": "B. Pharm",
+          "role": "Chairman",
+          "bio": "Provides strategic leadership and governance for Arshia Global BD (Pvt.) Limited across all business divisions.",
+          "phone": "+880 1351-254696",
+          "email": "info@arshialtd.com",
+          "image": "/images/team_chairman.jpg",
+          "socials": {}
+        },
+        {
+          "id": "team-2",
+          "name": "Md. Moshiur Rahman",
+          "credentials": "BSc. (Civil)",
+          "role": "Managing Director & CEO",
+          "bio": "Leads corporate operations, construction contracting, and infrastructure projects with expertise in civil engineering and project delivery.",
+          "phone": "+880 1646-730300",
+          "email": "info@arshialtd.com",
+          "image": "/images/team_md.jpg",
+          "socials": {}
+        },
+        {
+          "id": "team-3",
+          "name": "Selina Akter",
+          "credentials": "BA",
+          "role": "Director",
+          "bio": "Directs company strategy and oversees key business development initiatives across real estate, trade, and corporate operations.",
+          "phone": "+880 1351-254695",
+          "email": "info@arshialtd.com",
+          "image": "/images/team_director.jpg",
+          "socials": {}
+        },
+        {
+          "id": "team-4",
+          "name": "Md. Ariful Hossain",
+          "credentials": "CA-CC",
+          "role": "General Manager (Accounts & Finance)",
+          "bio": "Manages financial planning, accounting, auditing, and regulatory compliance for all company divisions and projects.",
+          "phone": "+880 1830-580732",
+          "email": "info@arshialtd.com",
+          "image": "/images/team_finance.jpg",
+          "socials": {}
+        },
+        {
+          "id": "team-5",
+          "name": "Rebeka Sultana",
+          "credentials": "MSc. (Geography)",
+          "role": "Executive Manager (Admin)",
+          "bio": "Oversees administrative operations, office management, and internal coordination across all departments.",
+          "phone": "+880 1944-161406",
+          "email": "info@arshialtd.com",
+          "image": "/images/team_admin.jpg",
+          "socials": {}
+        }
+      ]
     },
     {
-      "id": "team-2",
-      "name": "Tanzina Ahmed",
-      "role": "Partner & Head of Interior Design",
-      "bio": "With an eye for warm minimalism and rich natural textures, Tanzina designs interior spaces that flow naturally from the outer architectural shell, combining function with curated craftsmanship.",
-      "image": "/images/team_tanzina_ahmed_1784442487103.jpg",
-      "socials": {
-        "linkedin": "https://linkedin.com",
-        "instagram": "https://instagram.com"
-      }
+      "id": "hr",
+      "title": "HR Department",
+      "description": "Human resources, recruitment, employee relations, and organizational development.",
+      "members": []
     },
     {
-      "id": "team-3",
-      "name": "Zubair Chowdhury",
-      "role": "Senior Architectural Designer",
-      "bio": "Zubair specializes in complex digital model configurations and construction detailing. He coordinates all engineering interfaces to ensure the physical building reflects the architectural render precisely.",
-      "image": "/images/team_zubair_chowdhury_1784442501892.jpg",
-      "socials": {
-        "linkedin": "https://linkedin.com"
-      }
+      "id": "it",
+      "title": "IT Department",
+      "description": "Information technology, software solutions, digital platforms, and IT-enabled services.",
+      "members": []
     },
     {
-      "id": "team-4",
-      "name": "Farhan Karim",
-      "role": "Director of Projects & Supervision",
-      "bio": "A veteran construction supervisor, Farhan leads our on-site team, managing contractor relationships, concrete batch testing, and structural compliance audits with military-like precision.",
-      "image": "/images/team_farhan_karim_1784442517852.jpg",
-      "socials": {
-        "linkedin": "https://linkedin.com"
-      }
+      "id": "accounts",
+      "title": "Accounts Department",
+      "description": "Financial planning, accounting, auditing, and regulatory compliance across all divisions.",
+      "members": []
+    },
+    {
+      "id": "admin",
+      "title": "Admin Department",
+      "description": "Administrative operations, office management, and internal coordination.",
+      "members": []
     }
   ],
   "process": [
     {
       "step": "01",
-      "title": "Contextual Dialogue",
-      "subtitle": "Listening & Site Survey",
-      "desc": "We start with deep conversations to understand your lifestyle, dreams, and budget constraints. This is followed by a meticulous study of your plot—sun angles, wind flows, local heritage, and trees."
+      "title": "Consultation & Feasibility",
+      "subtitle": "Needs Assessment",
+      "desc": "We assess your requirements across real estate, construction, trade, or consultancy — and conduct feasibility studies, site surveys, and regulatory reviews as needed."
     },
     {
       "step": "02",
-      "title": "Framing the Concept",
-      "subtitle": "Sketches & Spatial Blueprints",
-      "desc": "We develop initial spatial block schemas and 3D architectural massing studies. We explore volumetric layout frames to establish how light, ventilation, and movement flows through your future building."
+      "title": "Approvals & Documentation",
+      "subtitle": "Regulatory Compliance",
+      "desc": "We obtain necessary permissions from Government and competent authorities — including RAJUK, WASA, Titas Gas, DESCO, and customs — before commencing any business activity."
     },
     {
       "step": "03",
-      "title": "Tectonic Refinement",
-      "subtitle": "Detailed Drawings & BOQ",
-      "desc": "Once the layout is approved, we generate comprehensive structural, electrical, plumbing, and material specification sheets. We compile a transparent Bill of Quantities (BOQ) to prevent budget creep."
+      "title": "Execution & Delivery",
+      "subtitle": "Project Implementation",
+      "desc": "Our teams execute construction, development, import-export, supply, or consultancy engagements with milestone-based reporting and quality assurance."
     },
     {
       "step": "04",
-      "title": "Supervised Manifestation",
-      "subtitle": "Site Supervision & Delivery",
-      "desc": "We don't just hand over drawings; we live on-site. Our team conducts rigorous periodic inspections to audit reinforcement bars, concrete pouring, wall finishes, and custom cabinetry joineries."
+      "title": "Handover & Partnership",
+      "subtitle": "Completion & Growth",
+      "desc": "Projects are completed with full documentation and certifications. We also pursue joint ventures, partnerships, and long-term client relationships for sustained growth."
     }
   ],
   "testimonials": [
     {
       "id": "test-1",
-      "name": "S. M. Chowdhury",
-      "company": "Owner, Concrete Frame House",
-      "quote": "Collaborating with Build Studio was a revelation. They didn't just build a house; they shaped a living sculpture. The natural light flowing into our double-height lounge makes us feel connected to the sky and trees every day.",
+      "name": "Rafiqul Islam",
+      "company": "Property Investor",
+      "quote": "Arshia Global BD handled our apartment development from land acquisition to RAJUK approval with complete professionalism. Their real estate team understands the regulatory landscape in Bangladesh.",
       "rating": 5,
-      "image": "/images/client_matin_rahman_1784442537351.jpg"
+      "image": "/images/client_1.jpg"
     },
     {
       "id": "test-2",
-      "name": "Rubina Rahman",
-      "company": "CEO, Aura Group Ltd.",
-      "quote": "Our office is now a powerful recruitment asset. Employee energy and productivity have soared since we moved into the biophilic Banani workspace designed by Build Studio. Their focus on light and spatial circulation is unmatched.",
+      "name": "Nusrat Jahan",
+      "company": "Commercial Developer",
+      "quote": "As a 1st class contractor, they delivered our multi-storied commercial building on schedule — including all utility connections from WASA, Titas Gas, and DESCO.",
       "rating": 5,
-      "image": "/images/client_samira_hossain_1784442551127.jpg"
+      "image": "/images/client_2.jpg"
     },
     {
       "id": "test-3",
-      "name": "Dr. Imtiaz Ahmed",
-      "company": "Client, Sreemangal Retreat",
-      "quote": "They turned our vacation plot into a slice of pure tranquility. The way they preserved the existing trees and configured our brick walkways around water bodies shows their deep respect for the natural environment.",
+      "name": "Karim Hossain",
+      "company": "Government Contractor",
+      "quote": "Their e-GP procurement team successfully bid and executed a government infrastructure contract through BPPA. Compliance, documentation, and delivery were all handled expertly.",
       "rating": 5,
-      "image": "/images/client_rashidul_bari_1784442566230.jpg"
+      "image": "/images/client_3.jpg"
     }
   ]
 }

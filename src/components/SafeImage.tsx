@@ -68,7 +68,7 @@ export default function SafeImage({
         <div className="absolute inset-0 bg-gradient-to-br from-[#c5a880]/5 via-transparent to-transparent opacity-40 pointer-events-none" />
         <div className="z-10 flex flex-col items-center p-4 text-center space-y-2">
           <span className="font-mono text-[10px] uppercase tracking-widest text-[#c5a880]">
-            {initials || "BUILT STUDIO"}
+            {initials || "ARSHIA"}
           </span>
         </div>
       </div>

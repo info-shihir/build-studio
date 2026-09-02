@@ -1,31 +1,45 @@
-import type { Metadata } from "next";
-import { Providers } from "./providers";
+import type { Metadata, Viewport } from "next";
 import "../index.css";
 
-const siteTitle = "Build Studio | Innovative Exterior & Interior Design";
+const siteTitle = "Arshia Global BD (Pvt.) Limited | Real Estate · Contractor · Export-Import · Supplier";
 const siteDescription =
-  "Build Studio designs and constructs innovative interior and exterior solutions, creating premium modern spaces in Dhaka, Bangladesh.";
+  "Arshia Global BD (Pvt.) Limited — a private company in Bangladesh, engaged in real estate, 1st class contracting, infrastructure, import-export, supply, consultancy, ITES, and e-GP government procurement.";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
   keywords: [
-    "Build Studio",
-    "Architecture",
-    "Interior Design",
-    "Exterior Design",
+    "Arshia Global BD",
+    "Private Limited Company",
+    "Real Estate",
+    "1st Class Contractor",
+    "RAJUK",
+    "Export Import",
+    "Supplier",
+    "e-GP",
+    "BPPA",
+    "Infrastructure",
+    "Consultancy",
+    "ITES",
+    "Construction",
     "Dhaka",
     "Bangladesh",
-    "Banani",
-    "BUET",
-    "duplex design",
-    "commercial office interior",
   ],
-  authors: [{ name: "Build Studio" }],
+  authors: [{ name: "Arshia Global BD (Pvt.) Limited" }],
   openGraph: {
     type: "website",
     title: siteTitle,
     description: siteDescription,
+  },
+  icons: {
+    icon: "/images/logo.jpg",
+    apple: "/images/logo.jpg",
   },
   twitter: {
     card: "summary_large_image",
@@ -34,22 +48,14 @@ export const metadata: Metadata = {
   },
 };
 
-const themeInitScript = `(function(){try{var t=localStorage.getItem("theme");document.documentElement.classList.remove("light","dark");document.documentElement.classList.add(t==="light"||t==="dark"?t:"dark");}catch(e){document.documentElement.classList.add("dark");}})();`;
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        <script
-          dangerouslySetInnerHTML={{ __html: themeInitScript }}
-          suppressHydrationWarning
-        />
-        <Providers>{children}</Providers>
-      </body>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

@@ -3,7 +3,6 @@ import { motion, useMotionValue, useTransform, useSpring } from "motion/react";
 import { MapPin, Maximize2 } from "lucide-react";
 import { ProjectItem } from "../types";
 import SafeImage from "./SafeImage";
-import { useTheme } from "../context/ThemeContext";
 
 interface ProjectCardProps {
   project: ProjectItem;
@@ -13,7 +12,6 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, onClick }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const { theme } = useTheme();
 
   // Motion values for tracking cursor position normalized from -0.5 to 0.5
   const mouseX = useMotionValue(0);
@@ -93,11 +91,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
           rotateY: springRotateY,
           transformStyle: "preserve-3d",
         }}
-        className={`group relative h-full w-full cursor-pointer rounded-2xl overflow-hidden transition-all duration-500 shadow-xl flex flex-col justify-between ${
-          theme === "dark" 
-            ? "glass-panel-dark text-white" 
-            : "glass-panel-light text-[#0a0a0a]"
-        }`}
+        className="group relative h-full w-full cursor-pointer rounded-2xl overflow-hidden transition-all duration-500 shadow-xl flex flex-col justify-between glass-panel-dark text-white"
       >
         {/* Dynamic liquid glass glare highlight overlay */}
         <motion.div
@@ -171,31 +165,23 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
 
         {/* Always-visible card lower footer with secondary 3D element elevation */}
         <div 
-          className={`p-5 flex justify-between items-center bg-white/[0.01] rounded-b-2xl relative z-10 transition-colors duration-500 ${
-            theme === "dark" ? "border-t border-white/5" : "border-t border-black/10"
-          }`}
+          className="p-5 flex justify-between items-center bg-white/[0.01] rounded-b-2xl relative z-10 transition-colors duration-500 border-t border-white/5"
           style={{ transformStyle: "preserve-3d" }}
         >
           <motion.div 
             className="flex-1 min-w-0 pr-4"
             style={{ translateZ: 15 }}
           >
-            <h4 className={`font-display font-semibold text-sm tracking-tight truncate transition-colors duration-300 ${
-              theme === "dark" ? "text-gray-100 group-hover:text-[#c5a880]" : "text-[#0a0a0a] group-hover:text-[#a98d65]"
-            }`}>
+            <h4 className="font-display font-semibold text-sm tracking-tight truncate transition-colors duration-300 text-gray-100 group-hover:text-[#c5a880]">
               {project.title}
             </h4>
-            <p className={`font-sans text-[11px] mt-0.5 truncate transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
+            <p className="font-sans text-[11px] mt-0.5 truncate transition-colors duration-300 text-gray-400">
               {project.location}
             </p>
           </motion.div>
 
           <motion.div 
-            className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 flex-shrink-0 group-hover:bg-[#c5a880] group-hover:border-[#c5a880] group-hover:text-[#0a0a0a] ${
-              theme === "dark"
-                ? "border border-white/10 bg-white/5 text-white"
-                : "border border-black/10 bg-black/5 text-[#0a0a0a]"
-            }`}
+            className="w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 flex-shrink-0 group-hover:bg-[#c5a880] group-hover:border-[#c5a880] group-hover:text-[#0a0a0a] border border-white/10 bg-white/5 text-white"
             style={{ translateZ: 25 }}
           >
             <Maximize2 className="w-3.5 h-3.5" />
@@ -205,4 +191,3 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
     </motion.div>
   );
 }
-

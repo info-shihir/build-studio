@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Mail, Phone, MapPin, Clock, Send, Check, AlertCircle } from "lucide-react";
 import { CompanyMeta } from "../types";
-import { useTheme } from "../context/ThemeContext";
+import SiteContainer from "./SiteContainer";
 
 interface ContactProps {
   company: CompanyMeta;
+  hideHeader?: boolean;
 }
 
-export default function Contact({ company }: ContactProps) {
-  const { theme } = useTheme();
+export default function Contact({ company, hideHeader = false }: ContactProps) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    projectType: "Residential Architecture",
+    projectType: "Real Estate",
     area: "",
     message: "",
   });
@@ -23,11 +23,14 @@ export default function Contact({ company }: ContactProps) {
   const [errorMessage, setErrorMessage] = useState("");
 
   const projectTypes = [
-    "Residential Architecture",
-    "Commercial Architecture",
-    "Interior Renovation",
-    "Landscape Design",
-    "Comprehensive Consultancy",
+    "Real Estate",
+    "Contractor / Construction",
+    "Infrastructure & Engineering",
+    "Export-Import",
+    "Supplier / Materials",
+    "Consultancy & ITES",
+    "Government Procurement (e-GP)",
+    "General Inquiry",
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -55,7 +58,7 @@ export default function Contact({ company }: ContactProps) {
         name: "",
         email: "",
         phone: "",
-        projectType: "Residential Architecture",
+        projectType: "Real Estate",
         area: "",
         message: "",
       });
@@ -66,14 +69,14 @@ export default function Contact({ company }: ContactProps) {
   };
 
   return (
-    <section id="contact" className={`py-24 bg-transparent relative overflow-hidden transition-colors duration-500 scroll-mt-24 ${theme === "dark" ? "text-white" : "text-[#0a0a0a]"}`}>
+    <section id="contact" className="py-24 bg-transparent relative overflow-hidden transition-colors duration-500 scroll-mt-24 text-white">
       {/* Liquid fluid background ambient orbs */}
-      <div className={`absolute top-1/4 left-0 w-[420px] h-[420px] rounded-full opacity-40 blur-[100px] pointer-events-none transition-all duration-500 ${theme === "dark" ? "liquid-orb-dark-1" : "liquid-orb-1"}`} />
-      <div className={`absolute bottom-1/4 right-0 w-[380px] h-[380px] rounded-full opacity-35 blur-[110px] pointer-events-none transition-all duration-500 ${theme === "dark" ? "liquid-orb-dark-2" : "liquid-orb-2"}`} />
+      <div className="absolute top-1/4 left-0 w-[420px] h-[420px] rounded-full opacity-40 blur-[100px] pointer-events-none transition-all duration-500 liquid-orb-dark-1" />
+      <div className="absolute bottom-1/4 right-0 w-[380px] h-[380px] rounded-full opacity-35 blur-[110px] pointer-events-none transition-all duration-500 liquid-orb-dark-2" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <SiteContainer className="relative z-10">
         
-        {/* Section Header */}
+        {!hideHeader && (
         <div className="max-w-2xl mb-16 space-y-4">
           <div className="inline-flex items-center space-x-2">
             <span className="h-[1px] w-8 bg-[#c5a880]" />
@@ -81,23 +84,20 @@ export default function Contact({ company }: ContactProps) {
               Get in Touch
             </span>
           </div>
-          <h2 id="contact-title" className={`font-display text-4xl sm:text-5xl font-bold tracking-tight transition-colors duration-300 ${theme === "dark" ? "text-white" : "text-[#0a0a0a]"}`}>
-            Start Your Build
+          <h2 id="contact-title" className="font-display text-4xl sm:text-5xl font-bold tracking-tight transition-colors duration-300 text-white">
+            Contact Us
           </h2>
-          <p id="contact-subtitle" className={`font-light text-sm sm:text-base leading-relaxed transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
-            Ready to frame your spatial dreams? Fill out our design brief, or visit our Banani studio for a cup of coffee.
+          <p id="contact-subtitle" className="font-light text-sm sm:text-base leading-relaxed transition-colors duration-300 text-gray-400">
+            Ready to start your next project? Fill out the form below or reach out directly — our team is here to help.
           </p>
         </div>
+        )}
 
         {/* Form and Sidebar Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Form Section */}
-          <div className={`rounded-2xl p-8 sm:p-10 shadow-2xl relative transition-all duration-500 lg:col-span-7 liquid-glass-card ${
-            theme === "dark" 
-              ? "glass-panel-dark liquid-shimmer" 
-              : "glass-panel-light liquid-shimmer liquid-shimmer-light"
-          }`}>
+          <div className="rounded-2xl p-8 sm:p-10 shadow-2xl relative transition-all duration-500 lg:col-span-7 liquid-glass-card glass-panel-dark liquid-shimmer">
             <div className="absolute top-0 left-0 w-2 h-full bg-[#c5a880]" />
 
             <AnimatePresence mode="wait">
@@ -113,9 +113,9 @@ export default function Contact({ company }: ContactProps) {
                     <Check className="w-8 h-8" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className={`font-display text-2xl font-bold transition-colors duration-300 ${theme === "dark" ? "text-white" : "text-[#0a0a0a]"}`}>Brief Submitted Successfully</h3>
-                    <p className={`font-light text-sm max-w-md transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
-                      Thank you for sharing your project parameters. A Senior Project Architect will review your requirements and reach out within 24 working hours.
+                    <h3 className="font-display text-2xl font-bold transition-colors duration-300 text-white">Inquiry Submitted Successfully</h3>
+                    <p className="font-light text-sm max-w-md transition-colors duration-300 text-gray-400">
+                      Thank you for reaching out. A member of our team will review your inquiry and respond within 24 working hours.
                     </p>
                   </div>
                   <button
@@ -154,11 +154,7 @@ export default function Contact({ company }: ContactProps) {
                         onChange={handleInputChange}
                         placeholder="e.g. Tanzim Ahmed"
                         required
-                        className={`w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all ${
-                          theme === "dark" 
-                            ? "bg-white/5 border border-white/10 focus:bg-white/10 text-white" 
-                            : "bg-black/5 border border-black/10 focus:bg-black/10 text-[#0a0a0a]"
-                        }`}
+                        className="w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all bg-white/5 border border-white/10 focus:bg-white/10 text-white"
                       />
                     </div>
 
@@ -175,11 +171,7 @@ export default function Contact({ company }: ContactProps) {
                         onChange={handleInputChange}
                         placeholder="e.g. tanzim@example.com"
                         required
-                        className={`w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all ${
-                          theme === "dark" 
-                            ? "bg-white/5 border border-white/10 focus:bg-white/10 text-white" 
-                            : "bg-black/5 border border-black/10 focus:bg-black/10 text-[#0a0a0a]"
-                        }`}
+                        className="w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all bg-white/5 border border-white/10 focus:bg-white/10 text-white"
                       />
                     </div>
                   </div>
@@ -197,11 +189,7 @@ export default function Contact({ company }: ContactProps) {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="e.g. +880 1712 000000"
-                        className={`w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all ${
-                          theme === "dark" 
-                            ? "bg-white/5 border border-white/10 focus:bg-white/10 text-white" 
-                            : "bg-black/5 border border-black/10 focus:bg-black/10 text-[#0a0a0a]"
-                        }`}
+                        className="w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all bg-white/5 border border-white/10 focus:bg-white/10 text-white"
                       />
                     </div>
 
@@ -215,14 +203,10 @@ export default function Contact({ company }: ContactProps) {
                         name="projectType"
                         value={formData.projectType}
                         onChange={handleInputChange}
-                        className={`w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all appearance-none cursor-pointer ${
-                          theme === "dark" 
-                            ? "bg-white/5 border border-white/10 focus:bg-white/10 text-white" 
-                            : "bg-black/5 border border-black/10 focus:bg-black/10 text-[#0a0a0a]"
-                        }`}
+                        className="w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all appearance-none cursor-pointer bg-white/5 border border-white/10 focus:bg-white/10 text-white"
                       >
                         {projectTypes.map((type) => (
-                          <option key={type} value={type} className={theme === "dark" ? "bg-[#18181b] text-white" : "bg-[#f8f6f0] text-black"}>
+                          <option key={type} value={type} className="bg-[#18181b] text-white">
                             {type}
                           </option>
                         ))}
@@ -233,7 +217,7 @@ export default function Contact({ company }: ContactProps) {
                   {/* Area input */}
                   <div className="space-y-2">
                     <label htmlFor="area-input" className="font-mono text-[10px] uppercase text-[#c5a880] tracking-widest font-semibold block">
-                      Target Spatial Area (sq. ft. / katha)
+                      Target Area / Quantity
                     </label>
                     <input
                       id="area-input"
@@ -241,19 +225,15 @@ export default function Contact({ company }: ContactProps) {
                       name="area"
                       value={formData.area}
                       onChange={handleInputChange}
-                      placeholder="e.g. 5,000 sq.ft. duplex"
-                      className={`w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all ${
-                        theme === "dark" 
-                          ? "bg-white/5 border border-white/10 focus:bg-white/10 text-white" 
-                          : "bg-black/5 border border-black/10 focus:bg-black/10 text-[#0a0a0a]"
-                      }`}
+                      placeholder="e.g. 5,000 sq.ft. or 10 katha"
+                      className="w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all bg-white/5 border border-white/10 focus:bg-white/10 text-white"
                     />
                   </div>
 
                   {/* Message input */}
                   <div className="space-y-2">
                     <label htmlFor="message-input" className="font-mono text-[10px] uppercase text-[#c5a880] tracking-widest font-semibold block">
-                      Describe Your Vision *
+                      Your Message *
                     </label>
                     <textarea
                       id="message-input"
@@ -261,13 +241,9 @@ export default function Contact({ company }: ContactProps) {
                       rows={5}
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell us about your plot, spatial dreams, required rooms, or inspiration themes..."
+                      placeholder="Tell us about your project, requirements, or inquiry..."
                       required
-                      className={`w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all resize-none ${
-                        theme === "dark" 
-                          ? "bg-white/5 border border-white/10 focus:bg-white/10 text-white" 
-                          : "bg-black/5 border border-black/10 focus:bg-black/10 text-[#0a0a0a]"
-                      }`}
+                      className="w-full rounded-xl py-3 px-4 font-sans text-sm focus:outline-none focus:border-[#c5a880] transition-all resize-none bg-white/5 border border-white/10 focus:bg-white/10 text-white"
                     />
                   </div>
 
@@ -278,7 +254,7 @@ export default function Contact({ company }: ContactProps) {
                     disabled={formState === "submitting"}
                     className="w-full flex items-center justify-center space-x-3 py-4 text-[#0a0a0a] font-display text-xs tracking-widest uppercase font-bold rounded-xl transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed group glass-btn-gold"
                   >
-                    <span>{formState === "submitting" ? "Compiling Blueprints..." : "Send Spatial Brief"}</span>
+                    <span>{formState === "submitting" ? "Sending..." : "Send Inquiry"}</span>
                     <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </button>
                 </motion.form>
@@ -289,28 +265,20 @@ export default function Contact({ company }: ContactProps) {
           {/* Right Column: Contact Details & Embedded map */}
           <div className="lg:col-span-5 space-y-10">
             {/* Contact Details cards */}
-            <div className={`rounded-2xl p-8 space-y-6 transition-all duration-500 liquid-glass-card ${
-            theme === "dark" 
-              ? "glass-panel-dark liquid-shimmer" 
-              : "glass-panel-light liquid-shimmer liquid-shimmer-light"
-            }`}>
-              <h3 className={`font-display text-lg font-bold border-b pb-3 transition-colors duration-300 ${
-                theme === "dark" ? "text-white border-white/5" : "text-[#0a0a0a] border-black/10"
-              }`}>
-                Studio Credentials
+            <div className="rounded-2xl p-8 space-y-6 transition-all duration-500 liquid-glass-card glass-panel-dark liquid-shimmer">
+              <h3 className="font-display text-lg font-bold border-b pb-3 transition-colors duration-300 text-white border-white/5">
+                Company Details
               </h3>
 
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start space-x-4">
-                  <div className={`p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 ${
-                    theme === "dark" ? "bg-white/5 border-white/5" : "bg-black/5 border-black/5"
-                  }`}>
+                  <div className="p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 bg-white/5 border-white/5">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className={`font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>HQ Address</h4>
-                    <p id="contact-address-text" className={`text-sm font-light leading-relaxed mt-1 transition-colors duration-300 ${theme === "dark" ? "text-gray-300" : "text-gray-850"}`}>
+                    <h4 className="font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 text-gray-400">HQ Address</h4>
+                    <p id="contact-address-text" className="text-sm font-light leading-relaxed mt-1 transition-colors duration-300 text-gray-300">
                       {company.contact.address}
                     </p>
                   </div>
@@ -318,14 +286,12 @@ export default function Contact({ company }: ContactProps) {
 
                 {/* Email */}
                 <div className="flex items-start space-x-4">
-                  <div className={`p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 ${
-                    theme === "dark" ? "bg-white/5 border-white/5" : "bg-black/5 border-black/5"
-                  }`}>
+                  <div className="p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 bg-white/5 border-white/5">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className={`font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>Email Us</h4>
-                    <p id="contact-email-text" className={`text-sm font-light mt-1 transition-colors duration-300 ${theme === "dark" ? "text-gray-300" : "text-gray-850"}`}>
+                    <h4 className="font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 text-gray-400">Email Us</h4>
+                    <p id="contact-email-text" className="text-sm font-light mt-1 transition-colors duration-300 text-gray-300">
                       <a href={`mailto:${company.contact.email}`} className="hover:text-[#c5a880] transition-colors">
                         {company.contact.email}
                       </a>
@@ -335,14 +301,12 @@ export default function Contact({ company }: ContactProps) {
 
                 {/* Phone */}
                 <div className="flex items-start space-x-4">
-                  <div className={`p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 ${
-                    theme === "dark" ? "bg-white/5 border-white/5" : "bg-black/5 border-black/5"
-                  }`}>
+                  <div className="p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 bg-white/5 border-white/5">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className={`font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>Call Studio</h4>
-                    <p id="contact-phone-text" className={`text-sm font-light mt-1 transition-colors duration-300 ${theme === "dark" ? "text-gray-300" : "text-gray-850"}`}>
+                    <h4 className="font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 text-gray-400">Call Us</h4>
+                    <p id="contact-phone-text" className="text-sm font-light mt-1 transition-colors duration-300 text-gray-300">
                       <a href={`tel:${company.contact.phone}`} className="hover:text-[#c5a880] transition-colors">
                         {company.contact.phone}
                       </a>
@@ -352,14 +316,12 @@ export default function Contact({ company }: ContactProps) {
 
                 {/* Working hours */}
                 <div className="flex items-start space-x-4">
-                  <div className={`p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 ${
-                    theme === "dark" ? "bg-white/5 border-white/5" : "bg-black/5 border-black/5"
-                  }`}>
+                  <div className="p-2.5 rounded-lg text-[#c5a880] mt-1 border transition-all duration-300 bg-white/5 border-white/5">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className={`font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>Studio Hours</h4>
-                    <p id="contact-hours-text" className={`text-sm font-light mt-1 transition-colors duration-300 ${theme === "dark" ? "text-gray-300" : "text-gray-850"}`}>
+                    <h4 className="font-mono text-[10px] uppercase tracking-widest font-semibold transition-colors duration-300 text-gray-400">Office Hours</h4>
+                    <p id="contact-hours-text" className="text-sm font-light mt-1 transition-colors duration-300 text-gray-300">
                       {company.contact.hours}
                     </p>
                   </div>
@@ -368,12 +330,10 @@ export default function Contact({ company }: ContactProps) {
             </div>
 
             {/* Embedded maps iframe styled beautifully for high contrast */}
-            <div id="contact-map" className={`aspect-video w-full rounded-2xl overflow-hidden border shadow-2xl relative transition-all duration-500 bg-[#0a0a0a] ${
-              theme === "dark" ? "border-white/10 grayscale opacity-80 hover:opacity-100" : "border-black/10 grayscale-xs opacity-95"
-            }`}>
+            <div id="contact-map" className="aspect-video w-full rounded-2xl overflow-hidden border shadow-2xl relative transition-all duration-500 bg-[#0a0a0a] border-white/10 grayscale opacity-80 hover:opacity-100">
               <iframe
-                title="Build Studio Banani Office Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0118831969446!2d90.40562721146313!3d23.782655787353107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70b72ab8393%3A0x7d6f5f9037e2fb25!2sBanani%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
+                title="Arshia Global BD Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.039576!2d90.3685!3d23.7758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c719ec0bdb0b%3A0x47f0e7c8e8e8e8e8!2sWest%20Agargaon%2C%20Sher-e-Bangla%20Nagar%2C%20Dhaka%201207!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -386,7 +346,7 @@ export default function Contact({ company }: ContactProps) {
 
         </div>
 
-      </div>
+      </SiteContainer>
     </section>
   );
 }

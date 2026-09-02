@@ -26,6 +26,11 @@ export interface CompanyMeta {
   tagline: string;
   description: string;
   foundedYear: string;
+  logo?: string;
+  registeredOffice?: string;
+  authorizedCapital?: string;
+  liabilityType?: string;
+  regulatoryNote?: string;
   stats: StatItem[];
   contact: ContactInfo;
 }
@@ -51,13 +56,28 @@ export interface AboutSection {
   pillars: AboutPillar[];
 }
 
+export interface ServiceProcessStep {
+  title: string;
+  desc: string;
+}
+
 export interface ServiceItem {
   id: string;
+  slug: string;
   title: string;
   icon: string;
   shortDesc: string;
   longDesc: string;
   features: string[];
+  details?: string[];
+  scope?: string[];
+  processSteps?: ServiceProcessStep[];
+  timeline?: string;
+  targetSectors?: string;
+  typicalTeam?: string;
+  tools?: string;
+  methodology?: string;
+  compliance?: string;
 }
 
 export interface ProjectItem {
@@ -76,10 +96,20 @@ export interface ProjectItem {
 export interface TeamMember {
   id: string;
   name: string;
+  credentials?: string;
   role: string;
   bio: string;
+  phone?: string;
+  email?: string;
   image: string;
   socials: Socials;
+}
+
+export interface TeamDepartment {
+  id: string;
+  title: string;
+  description?: string;
+  members: TeamMember[];
 }
 
 export interface ProcessStep {
@@ -106,7 +136,7 @@ export interface SiteContent {
   about: AboutSection;
   services: ServiceItem[];
   projects: ProjectItem[];
-  team: TeamMember[];
+  teamDepartments: TeamDepartment[];
   process: ProcessStep[];
   testimonials: Testimonial[];
 }

@@ -1,15 +1,14 @@
 import { motion } from "motion/react";
 import { ArrowRight, Compass, Edit3, ClipboardList, HardHat } from "lucide-react";
 import { ProcessStep } from "../types";
-import { useTheme } from "../context/ThemeContext";
+import SiteContainer from "./SiteContainer";
 
 interface ProcessProps {
   steps: ProcessStep[];
+  hideHeader?: boolean;
 }
 
-export default function Process({ steps }: ProcessProps) {
-  const { theme } = useTheme();
-
+export default function Process({ steps, hideHeader = false }: ProcessProps) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -45,14 +44,14 @@ export default function Process({ steps }: ProcessProps) {
   };
 
   return (
-    <section id="process" className={`py-24 bg-transparent overflow-hidden relative transition-colors duration-500 scroll-mt-24 ${theme === "dark" ? "text-white" : "text-[#0a0a0a]"}`}>
+    <section id="process" className="py-24 bg-transparent overflow-hidden relative transition-colors duration-500 scroll-mt-24 text-white">
       {/* Liquid fluid background ambient orbs */}
-      <div className={`absolute top-1/4 left-0 w-[300px] h-[300px] rounded-full opacity-25 blur-[100px] pointer-events-none transition-all duration-500 ${theme === "dark" ? "liquid-orb-dark-1" : "liquid-orb-1"}`} />
-      <div className={`absolute bottom-1/4 right-0 w-[350px] h-[350px] rounded-full opacity-30 blur-[110px] pointer-events-none transition-all duration-500 ${theme === "dark" ? "liquid-orb-dark-2" : "liquid-orb-2"}`} />
+      <div className="absolute top-1/4 left-0 w-[300px] h-[300px] rounded-full opacity-25 blur-[100px] pointer-events-none transition-all duration-500 liquid-orb-dark-1" />
+      <div className="absolute bottom-1/4 right-0 w-[350px] h-[350px] rounded-full opacity-30 blur-[110px] pointer-events-none transition-all duration-500 liquid-orb-dark-2" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <SiteContainer className="relative z-10">
         
-        {/* Section Header */}
+        {!hideHeader && (
         <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
           <div className="inline-flex items-center space-x-2">
             <span className="h-[1px] w-8 bg-[#c5a880]" />
@@ -62,12 +61,13 @@ export default function Process({ steps }: ProcessProps) {
             <span className="h-[1px] w-8 bg-[#c5a880]" />
           </div>
           <h2 id="process-title" className="font-display text-4xl sm:text-5xl font-bold tracking-tight">
-            How We Build
+            How We Work
           </h2>
-          <p id="process-subtitle" className={`font-light text-sm sm:text-base leading-relaxed transition-colors duration-300 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
-            A meticulous path from a simple conversational brief to structural completion, ensuring full transparency.
+          <p id="process-subtitle" className="font-light text-sm sm:text-base leading-relaxed transition-colors duration-300 text-gray-400">
+            A structured approach from initial consultation to project handover, ensuring transparency at every stage.
           </p>
         </div>
+        )}
 
         {/* Process Map Grid */}
         <motion.div
@@ -84,11 +84,7 @@ export default function Process({ steps }: ProcessProps) {
               variants={itemVariants}
               whileHover={{ y: -10, scale: 1.02, transition: { duration: 0.3 } }}
               key={idx}
-              className={`relative p-8 rounded-2xl flex flex-col justify-between group h-full transition-all duration-500 liquid-glass-card ${
-                theme === "dark" 
-                  ? "glass-panel-dark liquid-shimmer" 
-                  : "glass-panel-light liquid-shimmer liquid-shimmer-light"
-              }`}
+              className="relative p-8 rounded-2xl flex flex-col justify-between group h-full transition-all duration-500 liquid-glass-card glass-panel-dark liquid-shimmer"
             >
               {/* Top Section */}
               <div>
@@ -99,7 +95,7 @@ export default function Process({ steps }: ProcessProps) {
                   </span>
                   
                   {/* Step Icon container */}
-                  <div className={`p-3 rounded-sm group-hover:bg-[#c5a880]/15 transition-colors duration-300 ${theme === "dark" ? "bg-white/5" : "bg-black/5"}`}>
+                  <div className="p-3 rounded-sm group-hover:bg-[#c5a880]/15 transition-colors duration-300 bg-white/5">
                     {getStepIcon(idx)}
                   </div>
                 </div>
@@ -108,16 +104,14 @@ export default function Process({ steps }: ProcessProps) {
                   <span className="font-sans text-[10px] uppercase font-bold text-[#c5a880] tracking-widest block">
                     {step.subtitle}
                   </span>
-                  <h3 id={`process-step-title-${idx}`} className={`font-display text-lg font-bold tracking-tight transition-colors duration-300 ${theme === "dark" ? "text-white" : "text-[#0a0a0a]"}`}>
+                  <h3 id={`process-step-title-${idx}`} className="font-display text-lg font-bold tracking-tight transition-colors duration-300 text-white">
                     {step.title}
                   </h3>
                 </div>
               </div>
 
               {/* Description Body */}
-              <p id={`process-step-desc-${idx}`} className={`font-sans text-sm leading-relaxed font-light mt-6 group-hover:text-gray-300 transition-colors duration-300 ${
-                theme === "dark" ? "text-gray-400" : "text-gray-600"
-              }`}>
+              <p id={`process-step-desc-${idx}`} className="font-sans text-sm leading-relaxed font-light mt-6 group-hover:text-gray-300 transition-colors duration-300 text-gray-400">
                 {step.desc}
               </p>
 
@@ -133,15 +127,15 @@ export default function Process({ steps }: ProcessProps) {
 
         {/* Footer info banner */}
         <div className="mt-16 text-center">
-          <p className={`font-mono text-xs transition-colors duration-300 ${theme === "dark" ? "text-gray-500" : "text-gray-600"}`}>
-            Have questions about regulatory approvals?{" "}
-            <a href="#contact" className={`text-[#c5a880] underline transition-colors ${theme === "dark" ? "hover:text-white" : "hover:text-black"}`}>
-              Speak with a Project Architect &rarr;
+          <p className="font-mono text-xs transition-colors duration-300 text-gray-500">
+            Have questions about our services?{" "}
+            <a href="/contact" className="text-[#c5a880] underline transition-colors hover:text-white">
+              Speak with our team &rarr;
             </a>
           </p>
         </div>
 
-      </div>
+      </SiteContainer>
     </section>
   );
 }
