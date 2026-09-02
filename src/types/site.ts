@@ -10,6 +10,7 @@ export interface CompanyMap {
   lng?: number;
   zoom?: number;
   label?: string;
+  embedUrl?: string;
 }
 
 export interface ContactInfo {

@@ -25,8 +25,8 @@ export default function GoogleMapEmbed({
 
   const mapFrameClass =
     layout === "fill"
-      ? "flex-1 min-h-[280px] lg:min-h-0 w-full rounded-2xl overflow-hidden border shadow-2xl relative bg-[#0a0a0a] border-white/10 grayscale opacity-80 hover:opacity-100 transition-opacity duration-500"
-      : "aspect-video w-full rounded-2xl overflow-hidden border shadow-2xl relative bg-[#0a0a0a] border-white/10 grayscale opacity-80 hover:opacity-100 transition-opacity duration-500";
+      ? "flex-1 min-h-[280px] lg:min-h-0 w-full rounded-2xl overflow-hidden border shadow-2xl relative bg-[#0a0a0a] border-white/10"
+      : "aspect-video w-full rounded-2xl overflow-hidden border shadow-2xl relative bg-[#0a0a0a] border-white/10";
 
   return (
     <div

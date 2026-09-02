@@ -15,7 +15,7 @@
       { "id": "stat-4", "value": "RAJUK", "label": "Regulatory Compliant", "sub": "WASA, Titas Gas, DESCO approvals" }
     ],
     "contact": {
-      "address": "House: 02, Road: 05, West Agargaon, Sher-e-Bangla Nagar, Dhaka-1207, Bangladesh",
+      "address": "House 2, Road 5, West Agargaon, Sher-e-Bangla Nagar, Dhaka 1207, Bangladesh",
       "email": "info@arshialtd.com",
       "phone": "+880 1646-730300",
       "hours": "Saturday - Thursday: 9:00 AM - 6:00 PM",
@@ -25,9 +25,9 @@
         "linkedin": "https://linkedin.com/company/arshiaglobalbd"
       },
       "map": {
-        "lat": 23.774,
-        "lng": 90.369,
-        "zoom": 16,
+        "lat": 23.77983,
+        "lng": 90.36843,
+        "zoom": 17,
         "label": "Arshia Global BD (Pvt.) Limited"
       }
     }
