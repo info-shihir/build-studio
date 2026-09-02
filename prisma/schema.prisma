@@ -1,0 +1,235 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AdminRole {
+  super_admin
+  editor
+  viewer
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  passwordHash  String?
+  role          AdminRole @default(editor)
+  accounts      Account[]
+  sessions      Session[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Company {
+  id               String     @id @default("default")
+  name             String
+  shortName        String
+  tagline          String
+  description      String     @db.Text
+  foundedYear      String
+  logo             String?
+  registeredOffice String?    @db.Text
+  authorizedCapital String?
+  liabilityType    String?
+  regulatoryNote   String?    @db.Text
+  contactAddress   String     @db.Text
+  contactEmail     String
+  contactPhone     String
+  contactHours     String
+  socialFacebook   String?
+  socialInstagram  String?
+  socialLinkedin   String?
+  socialPinterest  String?
+  stats            StatItem[]
+  updatedAt        DateTime   @updatedAt
+  updatedBy        String?
+}
+
+model StatItem {
+  id        String  @id
+  companyId String  @default("default")
+  value     String
+  label     String
+  sub       String
+  sortOrder Int     @default(0)
+  company   Company @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model HeroSlide {
+  id        String @id
+  title     String
+  subtitle  String @db.Text
+  image     String
+  cta       String
+  link      String
+  sortOrder Int    @default(0)
+}
+
+model AboutSection {
+  id         String        @id @default("default")
+  title      String
+  subtitle   String        @db.Text
+  paragraphs String[]
+  pillars    AboutPillar[]
+  updatedAt  DateTime      @updatedAt
+  updatedBy  String?
+}
+
+model AboutPillar {
+  id             String       @id @default(cuid())
+  aboutSectionId String       @default("default")
+  title          String
+  desc           String       @db.Text
+  sortOrder      Int          @default(0)
+  aboutSection   AboutSection @relation(fields: [aboutSectionId], references: [id], onDelete: Cascade)
+}
+
+model Service {
+  id             String   @id
+  slug           String   @unique
+  title          String
+  icon           String
+  shortDesc      String   @db.Text
+  longDesc       String   @db.Text
+  details        String[] @default([])
+  scope          String[] @default([])
+  features       String[] @default([])
+  processSteps   Json     @default("[]")
+  timeline       String?
+  targetSectors  String?  @db.Text
+  typicalTeam    String?  @db.Text
+  tools          String?  @db.Text
+  methodology    String?  @db.Text
+  compliance     String?  @db.Text
+  sortOrder      Int      @default(0)
+  updatedAt      DateTime @updatedAt
+  updatedBy      String?
+}
+
+model Project {
+  id          String   @id
+  title       String
+  category    String
+  client      String
+  location    String
+  year        String
+  area        String
+  image       String
+  description String   @db.Text
+  features    String[] @default([])
+  sortOrder   Int      @default(0)
+  updatedAt   DateTime @updatedAt
+  updatedBy   String?
+}
+
+model TeamDepartment {
+  id          String       @id
+  title       String
+  description String?      @db.Text
+  sortOrder   Int          @default(0)
+  members     TeamMember[]
+  updatedAt   DateTime     @updatedAt
+  updatedBy   String?
+}
+
+model TeamMember {
+  id           String         @id
+  departmentId String
+  name         String
+  credentials  String?
+  role         String
+  bio          String         @db.Text
+  phone        String?
+  email        String?
+  image        String
+  socialFacebook  String?
+  socialInstagram String?
+  socialLinkedin  String?
+  socialPinterest String?
+  sortOrder    Int            @default(0)
+  department   TeamDepartment @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  updatedAt    DateTime       @updatedAt
+  updatedBy    String?
+}
+
+model ProcessStep {
+  id        String @id @default(cuid())
+  step      String
+  title     String
+  subtitle  String
+  desc      String @db.Text
+  sortOrder Int    @default(0)
+}
+
+model Testimonial {
+  id        String @id
+  name      String
+  company   String
+  quote     String @db.Text
+  rating    Int    @default(5)
+  image     String
+  sortOrder Int    @default(0)
+  updatedAt DateTime @updatedAt
+  updatedBy String?
+}
+
+model PageMeta {
+  slug        String  @id
+  eyebrow     String?
+  title       String
+  description String? @db.Text
+  updatedAt   DateTime @updatedAt
+  updatedBy   String?
+}
+
+model ContactInquiry {
+  id          String   @id @default(cuid())
+  name        String
+  email       String
+  phone       String?
+  projectType String
+  message     String   @db.Text
+  receivedAt  DateTime @default(now())
+  readAt      DateTime?
+}

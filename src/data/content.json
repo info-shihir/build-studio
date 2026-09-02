@@ -23,6 +23,12 @@
         "facebook": "https://www.facebook.com/",
         "instagram": "https://instagram.com/",
         "linkedin": "https://linkedin.com/company/arshiaglobalbd"
+      },
+      "map": {
+        "lat": 23.774,
+        "lng": 90.369,
+        "zoom": 16,
+        "label": "Arshia Global BD (Pvt.) Limited"
       }
     }
   },
@@ -577,5 +583,42 @@
       "rating": 5,
       "image": "/images/client_3.jpg"
     }
-  ]
+  ],
+  "pages": {
+    "about": {
+      "eyebrow": "Who We Are",
+      "title": "Corporate Profile",
+      "description": "Arshia Global BD (Pvt.) Limited — established to serve Bangladesh's growing built environment and trade economy."
+    },
+    "services": {
+      "eyebrow": "Our Expertise",
+      "title": "What We Offer",
+      "description": "Five integrated divisions aligned with our Memorandum of Association — from real estate and construction to infrastructure, trade, and supply."
+    },
+    "projects": {
+      "eyebrow": "Our Work",
+      "title": "Our Projects",
+      "description": "A portfolio of real estate developments, construction contracts, infrastructure works, trade operations, and government procurement projects."
+    },
+    "team": {
+      "eyebrow": "Team",
+      "title": "Meet Our Team",
+      "description": "Leadership and departmental teams supporting real estate, construction, trade, accounts, admin, HR, and IT operations."
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "How We Work",
+      "description": "A structured approach from initial consultation to project handover, ensuring transparency and regulatory compliance at every stage."
+    },
+    "testimonials": {
+      "eyebrow": "Client Feedback",
+      "title": "What Our Clients Say",
+      "description": "Trusted by property investors, developers, contractors, and trade partners across Bangladesh."
+    },
+    "contact": {
+      "eyebrow": "Get in Touch",
+      "title": "Contact Us",
+      "description": "Ready to start your next project? Fill out the form below or reach out directly — our team is here to help."
+    }
+  }
 }

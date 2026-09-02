@@ -1,18 +1,16 @@
-import { content } from "./content";
-import { ServiceItem } from "../types";
-import { ServiceSlug } from "./navigation";
+import { siteContentService } from "@/server/services";
+import type { ServiceItem } from "@/types/site";
+import type { ServiceSlug } from "@/lib/navigation";
 
-const DIRECTORY_EXCLUDED_SLUGS = new Set<string>(["consultancy"]);
-
-/** Core division services shown in homepage/services directory UI (excludes Consultancy & e-GP). */
-export function getListedServices(): ServiceItem[] {
-  return content.services.filter((s) => !DIRECTORY_EXCLUDED_SLUGS.has(s.slug));
+/** Listed services for directory UI (excludes Consultancy & e-GP). */
+export async function getListedServices(): Promise<ServiceItem[]> {
+  return siteContentService.getListedServices();
 }
 
-export function getServiceBySlug(slug: ServiceSlug): ServiceItem | undefined {
-  return content.services.find((s) => s.slug === slug);
+export async function getServiceBySlug(slug: ServiceSlug) {
+  return siteContentService.getServiceBySlug(slug);
 }
 
-export function getAllServiceSlugs(): ServiceSlug[] {
-  return content.services.map((s) => s.slug as ServiceSlug);
+export async function getAllServiceSlugs(): Promise<ServiceSlug[]> {
+  return siteContentService.getAllServiceSlugs();
 }
