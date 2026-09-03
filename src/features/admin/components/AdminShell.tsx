@@ -12,7 +12,7 @@ interface AdminShellProps {
 
 export default function AdminShell({ children, userEmail, demoMode = false }: AdminShellProps) {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-[#f4f4f5] flex">
+    <div className="min-h-screen bg-[#000729] text-[#f4f4f5] flex">
       <AdminSidebar />
       <div className="flex-1 flex flex-col min-w-0">
         <header className="border-b border-white/10 px-6 py-4 flex items-center justify-between gap-4">

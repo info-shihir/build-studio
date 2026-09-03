@@ -74,7 +74,7 @@ export default function Header({ company }: HeaderProps) {
     siteContainerClass,
     "rounded-xl transition-all duration-500",
     isMobileMenuOpen
-      ? "bg-[#0a0a0a]/95 backdrop-blur-2xl border border-white/10 shadow-2xl py-3"
+      ? "bg-[#000729]/95 backdrop-blur-2xl border border-white/10 shadow-2xl py-3"
       : isScrolled
         ? "glass-header-heavy py-3"
         : isHome
@@ -193,7 +193,7 @@ export default function Header({ company }: HeaderProps) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 120 }}
-            className="fixed inset-0 z-40 w-full flex flex-col pt-[max(7rem,env(safe-area-inset-top))] px-6 sm:px-8 pb-[max(2.5rem,env(safe-area-inset-bottom))] overflow-y-auto bg-[#0a0a0a] lg:hidden"
+            className="fixed inset-0 z-40 w-full flex flex-col pt-[max(7rem,env(safe-area-inset-top))] px-6 sm:px-8 pb-[max(2.5rem,env(safe-area-inset-bottom))] overflow-y-auto bg-[#000729] lg:hidden"
           >
             <div className="flex flex-col space-y-2 flex-grow">
               {mainNavigation.map((item) =>

@@ -6,10 +6,10 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  /* Premium Architecture Palette */
-  --color-arch-charcoal: #0a0a0a;
-  --color-arch-stone: #121212;
-  --color-arch-slate: #1c1c1e;
+  /* Premium Architecture Palette — brand bg CMYK 100,82,0,84 */
+  --color-arch-charcoal: #000729;
+  --color-arch-stone: #061033;
+  --color-arch-slate: #0c1844;
   --color-arch-gray: #8e8e93;
   --color-arch-sand: #e5e0d8;
   --color-arch-cream: #f8f6f0;
@@ -22,7 +22,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     font-family: var(--font-sans);
-    background-color: #151413;
+    background-color: #000729;
     color: #f4f4f5;
   }
 
@@ -30,8 +30,8 @@
     min-height: 100dvh;
     background:
       radial-gradient(ellipse 140% 90% at 50% -20%, rgba(197, 168, 128, 0.06) 0%, transparent 55%),
-      radial-gradient(ellipse 80% 60% at 50% 100%, rgba(28, 26, 24, 0.9) 0%, transparent 70%),
-      #151413;
+      radial-gradient(ellipse 80% 60% at 50% 100%, rgba(0, 7, 41, 0.9) 0%, transparent 70%),
+      #000729;
   }
 
   @media (max-width: 1023px) {
@@ -46,7 +46,7 @@
     height: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: rgba(21, 20, 19, 0.6);
+    background: rgba(0, 7, 41, 0.6);
     backdrop-filter: blur(8px);
   }
   ::-webkit-scrollbar-thumb {
@@ -253,12 +253,12 @@
 
 .liquid-orb-dark-1 {
   animation: floatLiquid1 20s infinite ease-in-out;
-  background: radial-gradient(circle, rgba(197, 168, 128, 0.18) 0%, rgba(21, 20, 19, 0) 70%);
+  background: radial-gradient(circle, rgba(197, 168, 128, 0.18) 0%, rgba(0, 7, 41, 0) 70%);
 }
 
 .liquid-orb-dark-2 {
   animation: floatLiquid2 25s infinite ease-in-out;
-  background: radial-gradient(circle, rgba(21, 20, 19, 0.45) 0%, rgba(21, 20, 19, 0) 70%);
+  background: radial-gradient(circle, rgba(0, 7, 41, 0.45) 0%, rgba(0, 7, 41, 0) 70%);
 }
 
 /* Custom smooth overlay styling and grid helpers */
