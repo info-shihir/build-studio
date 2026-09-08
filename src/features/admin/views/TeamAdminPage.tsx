@@ -116,7 +116,7 @@ export default function TeamAdminPage() {
                     credentials: memberForm.credentials,
                     phone: memberForm.phone,
                     email: memberForm.email,
-                    image: memberForm.image ?? "/images/logo.jpg",
+                    image: memberForm.image ?? "/images/logo.png",
                     socials: memberForm.socials,
                   };
                   if (memberForm.id) await updateAdminMember(memberForm.id, payload);

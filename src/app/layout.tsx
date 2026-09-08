@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     description: siteDescription,
   },
   icons: {
-    icon: "/images/logo.jpg",
-    apple: "/images/logo.jpg",
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   twitter: {
     card: "summary_large_image",

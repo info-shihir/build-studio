@@ -8,28 +8,28 @@ interface CompanyLogoProps {
 }
 
 const sizeClasses = {
-  sm: "w-9 h-9",
-  md: "w-11 h-11",
-  lg: "w-14 h-14",
+  sm: "h-10 sm:h-11 w-auto",
+  md: "h-14 sm:h-16 w-auto",
+  lg: "h-20 sm:h-24 w-auto",
 };
+
+const DEFAULT_LOGO = "/images/logo.png";
 
 export default function CompanyLogo({
   company,
   size = "md",
-  showText = true,
+  showText = false,
   className = "",
 }: CompanyLogoProps) {
+  const logoSrc = company.logo || DEFAULT_LOGO;
+
   return (
-    <div className={`flex items-center space-x-2.5 group ${className}`}>
-      <div
-        className={`${sizeClasses[size]} rounded-full overflow-hidden border border-white/10 bg-white flex-shrink-0 transition-transform duration-500 group-hover:scale-105`}
-      >
-        <img
-          src={company.logo || "/images/logo.jpg"}
-          alt={`${company.name} logo`}
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <div className={`flex items-center gap-2.5 group ${className}`}>
+      <img
+        src={logoSrc}
+        alt={`${company.name} logo`}
+        className={`${sizeClasses[size]} max-w-[11rem] sm:max-w-[14rem] object-contain object-left transition-transform duration-500 group-hover:scale-[1.02]`}
+      />
       {showText && (
         <div className="flex flex-col min-w-0">
           <span className="font-display font-bold text-base tracking-wider leading-none text-white truncate">

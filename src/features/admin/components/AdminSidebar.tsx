@@ -10,6 +10,11 @@ export default function AdminSidebar() {
   return (
     <aside className="w-64 shrink-0 border-r border-white/10 bg-[#0f0f0f] min-h-screen p-4">
       <div className="mb-8 px-2">
+        <img
+          src="/images/logo.png"
+          alt="Arshia Global BD"
+          className="h-12 w-auto object-contain mb-3"
+        />
         <p className="font-mono text-[10px] uppercase tracking-widest text-[#c5a880]">CMS</p>
         <h2 className="font-display text-lg font-semibold text-white">Arshia Global BD</h2>
       </div>

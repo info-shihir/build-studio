@@ -23,7 +23,7 @@ export default function Footer({ company }: FooterProps) {
   );
 
   return (
-    <footer className="pt-20 pb-10 relative overflow-hidden bg-[#0e0d0c] text-white border-t border-white/5">
+    <footer className="pt-20 pb-10 relative overflow-hidden bg-[#000729] text-white border-t border-white/5">
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full opacity-25 blur-[100px] pointer-events-none liquid-orb-dark-1" />
 
       <SiteContainer className="relative z-10">
