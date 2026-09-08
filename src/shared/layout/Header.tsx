@@ -74,9 +74,9 @@ export default function Header({ company }: HeaderProps) {
     siteContainerClass,
     "rounded-xl transition-all duration-500",
     isMobileMenuOpen
-      ? "bg-[#000729]/95 backdrop-blur-2xl border border-white/10 shadow-2xl py-3"
+      ? "bg-[#000729]/95 backdrop-blur-2xl border border-white/10 shadow-2xl py-3.5 sm:py-4"
       : isScrolled
-        ? "glass-header-heavy py-3"
+        ? "glass-header-heavy py-3.5 sm:py-4"
         : isHome
           ? "bg-black/30 backdrop-blur-md py-4 sm:py-5 border border-white/5"
           : "glass-header-scrolled py-4 sm:py-5",
@@ -98,7 +98,7 @@ export default function Header({ company }: HeaderProps) {
         <div className={headerInnerClass}>
         <div className="flex items-center justify-between">
           <Link href="/" className="group">
-            <CompanyLogo company={company} size="sm" />
+            <CompanyLogo company={company} size="md" />
           </Link>
 
           {/* Desktop / tablet navigation (1024px+) */}

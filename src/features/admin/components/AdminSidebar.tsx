@@ -13,7 +13,7 @@ export default function AdminSidebar() {
         <img
           src="/images/logo.png"
           alt="Arshia Global BD"
-          className="h-12 w-auto object-contain mb-3"
+          className="h-20 w-auto object-contain mb-3"
         />
         <p className="font-mono text-[10px] uppercase tracking-widest text-[#c5a880]">CMS</p>
         <h2 className="font-display text-lg font-semibold text-white">Arshia Global BD</h2>
