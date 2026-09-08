@@ -13,7 +13,7 @@ export default function AdminLoginPage() {
           <img
             src="/images/logo.png"
             alt="Arshia Global BD logo"
-            className="mx-auto h-28 sm:h-32 w-auto object-contain"
+            className="mx-auto h-20 w-auto object-contain"
           />
           <div className="space-y-2">
             <p className="font-mono text-[10px] uppercase tracking-widest text-[#c5a880]">Admin</p>

@@ -30,7 +30,7 @@ export default function Footer({ company }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-white/5">
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="group w-fit">
-              <CompanyLogo company={company} size="lg" />
+              <CompanyLogo company={company} size="md" />
             </Link>
             <p className="font-light text-sm leading-relaxed text-gray-400">
               {company.description}
